@@ -13,3 +13,11 @@ order: 4
 
 ## Badge
 badge暂时是基于sheield.io的静态版本，超链接通过md语法中对图片超链接实现。
+
+## Reference
+0. [How-to-post](http://localhost:4000/posts/write-a-new-post/)
+1. [Chronic.local](http://localhost:4000/)(限本地开发)
+2. [Chronic](https://nsgih.github.io/)  
+3. [jekyll-chirpy-theme](https://github.com/cotes2020/jekyll-theme-chirpy)
+4. [chirpy-demo](https://chirpy.cotes.page/)
+5. [jekyll-component](https://github.com/jekyll/jekyll-compose)
