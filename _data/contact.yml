@@ -3,8 +3,10 @@
 - type: github
   icon: "fab fa-github"
 
-- type: twitter
-  icon: "fa-brands fa-x-twitter"
+- type: music
+  icon: "fa-solid fa-music"  # 自定义图标路径
+  url: "https://www.youtube.com/watch?v=ejbazkKQhRk&list=OLAK5uy_kc8kMkDamS76dG6JZnKTSGwqqoWwjUaIw&index=12"                          # 可以放二维码页面或跳转链接
+
 
 - type: email
   icon: "fas fa-envelope"
