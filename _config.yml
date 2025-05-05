@@ -16,7 +16,7 @@ timezone: Asia/Shanghai
 
 title: Chronic # the main title
 
-tagline: [没有价值] # it will display as the subtitle
+tagline: 没有价值 # it will display as the subtitle
 
 description: >- # used by seo meta and the atom feed
   personal blog of nagi hsiao
