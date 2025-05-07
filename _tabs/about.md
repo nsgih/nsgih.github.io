@@ -24,3 +24,6 @@ badge暂时是基于sheield.io的静态版本，超链接通过md语法中对图
 ## Wormhole
 - [oassihu](https://matters.town/@oasishu)
 - [Wormhole](https://wormhole.app/)
+- [977](https://rin977.com/)
+- [lainbo@区块链博客](https://lainbo.dev/)
+- [antfu@开源玩家](https://antfu.me/)
