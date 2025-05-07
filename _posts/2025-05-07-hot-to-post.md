@@ -4,6 +4,7 @@ title: 如何剖斯特
 date: 2025-05-07 00:02 +0800
 pin: true
 author: nagi
+categories: [tutorial,writing]
 ---
 
 
@@ -85,3 +86,21 @@ bundle exec jekyll rename _drafts/my-renamed-draft.md "My new draft"
 
 ### 另外
 你也可以直接在根目录生成文章，按照`_cofig.yml`对`scope.path: ""的permalink`的默认映射规则，你将在`/:title/`找到他，也就是。
+
+## image-Preview image
+[![Static Badge](https://img.shields.io/badge/kramdown-%E6%89%A9%E5%B1%95html-55acee?logo=%23000000&logoColor=%23000000)](https://kramdown.gettalong.org/)
+> Preview Image 
+> 
+> If you want to add an image at the top of the post, please provide an image with a resolution of 1200 x 630. Please note that if the image aspect ratio does not meet 1.91 : 1, the image will be scaled and cropped.
+{: .prompt-info}
+
+{}是Kramdown扩展语法，用于给Markdown元素添加HTML Class。语法组成为：
+```markdown
+{: .class-name #id-name key="value" }
+```
+回到正题，`1200 x 630`。
+
+## vscode-markdown
+我从vs扩展（`ctrl+shfit+x`）下载了`Markdown All in One`和`Markdown Shortcuts`用于md编辑和快捷键。
+
+`ctrl+M`+`ctrl+M`十分方便。
