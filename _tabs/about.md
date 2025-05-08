@@ -11,6 +11,8 @@ order: 4
 [![Build](https://github.com/nsgih/nsgih.github.io/actions/workflows/pages-deploy.yml/badge.svg)](#)
 [![Static Badge](https://img.shields.io/badge/chatgpt-nagi.co-55acee?logo=openai&logoColor=%23412991)](https://chatgpt.com/)
 [![Static Badge](https://img.shields.io/badge/zlib-nagi.co-55acee?logo=librarything&logoColor=%23251A15)](https://1lib.sk/)
+[![Static Badge](https://img.shields.io/badge/FrontAwesome-icon-55acee?logo=fontawesome&logoColor=%23538DD7)](https://fontawesome.com/search)
+[![Static Badge](https://img.shields.io/badge/Favicon-fav--icon-55acee?logo=starbucks&logoColor=%23006241)](https://realfavicongenerator.net/)
 
 ## Badge
 badge暂时是基于sheield.io的静态版本，超链接通过md语法中对图片超链接实现。
@@ -29,3 +31,4 @@ badge暂时是基于sheield.io的静态版本，超链接通过md语法中对图
 - [977](https://rin977.com/)
 - [lainbo@区块链博客](https://lainbo.dev/)
 - [antfu@开源玩家](https://antfu.me/)
+- [@博客看板娘](https://gardencavy.site/course/blog/blog03/)
