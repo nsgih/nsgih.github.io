@@ -14,10 +14,10 @@ order: 4
 [![Static Badge](https://img.shields.io/badge/FrontAwesome-icon-55acee?logo=fontawesome&logoColor=%23538DD7)](https://fontawesome.com/search)
 [![Static Badge](https://img.shields.io/badge/Favicon-fav--icon-55acee?logo=starbucks&logoColor=%23006241)](https://realfavicongenerator.net/)
 
-## Badge
+## <i class="fa-solid fa-toggle-off"></i>Badge
 badge暂时是基于sheield.io的静态版本，超链接通过md语法中对图片超链接实现。
 
-## Reference
+## <i class="fa-solid fa-toggle-off">  </i>Reference
 0. [How-to-post](http://localhost:4000/posts/write-a-new-post/)
 1. [Chronic.local](http://localhost:4000/)(限本地开发)
 2. [Chronic](https://nsgih.github.io/)  
@@ -25,7 +25,7 @@ badge暂时是基于sheield.io的静态版本，超链接通过md语法中对图
 4. [chirpy-demo](https://chirpy.cotes.page/)
 5. [jekyll-component](https://github.com/jekyll/jekyll-compose)
 
-## Wormhole
+## <i class="fa-solid fa-toggle-on">  </i>Wormhole
 - [oassihu@记者](https://matters.town/@oasishu)
 - [Wormhole](https://wormhole.app/)
 - [977](https://rin977.com/)
