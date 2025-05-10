@@ -32,3 +32,4 @@ badge暂时是基于sheield.io的静态版本，超链接通过md语法中对图
 - [lainbo@区块链博客](https://lainbo.dev/)
 - [antfu@开源玩家](https://antfu.me/)
 - [@博客看板娘](https://gardencavy.site/course/blog/blog03/)
+- [医学统计学@王超辰](https://wangcc.me/LSHTMlearningnote/)
