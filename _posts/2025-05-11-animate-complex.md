@@ -9,5 +9,5 @@ tag: complex
 
 
 ## 动画板
-![alt text](image.png)_beastar_
+![alt text](/assets/image.png)_beastar_
 
