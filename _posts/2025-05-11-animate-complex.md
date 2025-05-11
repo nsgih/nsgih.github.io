@@ -8,5 +8,6 @@ date: 2025-05-11 01:48 +0800
 [![anime1.me](https://img.shields.io/uptimerobot/status/m800513350-d8b5d51a8b91fe0ee748eb3b?label=anime1.me)](https://anime1.me/)
 
 
-## 动画版
-- Beastars
+## 动画板
+![alt text](image.png)_beastar_
+
