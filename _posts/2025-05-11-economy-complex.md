@@ -1,7 +1,6 @@
 ---
 layout: post
 title: Economy Complex
-categories: log
 date: 2025-05-11 15:42 +0800
 tag: complex
 ---
