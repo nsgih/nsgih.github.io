@@ -5,8 +5,10 @@ date: 2025-05-14 23:43 +0800
 tag: complex
 ---
 ## 脚手架
+### [地图](https://leetcode.cn/discuss/post/3141566/ru-he-ke-xue-shua-ti-by-endlesscheng-q3yd/)
+计划首先每日一题+周赛 --> 之后Hot100 --> 最后按照map刷。
 
-- 区间
+### 区间
 ```python
 [a,b].elem = |b-a| + 1 = b-a+1
 
