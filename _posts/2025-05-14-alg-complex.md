@@ -5,6 +5,20 @@ date: 2025-05-14 23:43 +0800
 tag: complex
 ---
 ## 脚手架
+### python
+- list comprehension
+> “Comprehension” means:
+> Grabbing and shaping data from something else
+> using a compact expression.
+>
+> Grasping values from an iterable (for x in ...)
+> 
+> Filtering them optionally (if ...)
+> 
+> Transforming them (expression)
+> 
+> Composing a new collection (list, set, dict)
+{: .prompt-info}
 ### [地图](https://leetcode.cn/discuss/post/3141566/ru-he-ke-xue-shua-ti-by-endlesscheng-q3yd/)
 计划首先每日一题+周赛 --> 之后Hot100 --> 最后按照map刷。
 
