@@ -7,18 +7,25 @@ tag: complex
 ## 脚手架
 ### python
 - list comprehension
+
+> The word “comprehension” comes from the Latin comprehendere, meaning “to grasp,” “to include,” or “to take in.”
+> 
+> So in programming, a comprehension is a compact way to construct (or "grasp") a new collection from an existing one.
+> 
 > “Comprehension” means:
+> 
 > Grabbing and shaping data from something else
 > using a compact expression.
 >
-> Grasping values from an iterable (for x in ...)
+> - Grasping values from an iterable (for x in ...)
 > 
-> Filtering them optionally (if ...)
+> - Filtering them optionally (if ...)
 > 
-> Transforming them (expression)
+> - Transforming them (expression)
 > 
-> Composing a new collection (list, set, dict)
+> - Composing a new collection (list, set, dict)
 {: .prompt-info}
+
 ### [地图](https://leetcode.cn/discuss/post/3141566/ru-he-ke-xue-shua-ti-by-endlesscheng-q3yd/)
 计划首先每日一题+周赛 --> 之后Hot100 --> 最后按照map刷。
 
