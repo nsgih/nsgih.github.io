@@ -17,9 +17,43 @@ tag: complex
 
 (a,b).elem = |b-a| + -1 = b-a-1
 ```
-
 ### dp
 子问题、状态定义、转移方程
+
+## easy
+daily-2900@python,.append(x),.insert(0,x),.pop(x),.pop(0,x),.extend(other)
+```python
+class Solution:
+    def getLongestSubsequence(self, words: List[str], groups: List[int]) -> List[str]:
+        # how to traverse
+        ans=[]
+        ans.append(words[0]) # python append
+        for i in range(len(groups)-1):
+            if groups[i]^groups[i+1]==1:
+                ans.append(words[i+1])
+        return ans
+
+        # or traverse by i,g in enumerate(groups)
+        ans = []
+        for i, g in enumerate(groups):
+            if i == len(groups) - 1 or g != groups[i + 1]:  # i 是连续相同段的末尾
+                ans.append(words[i])
+        return ans
+
+        # or groupby
+from itertools import groupby
+    # key=lambda z:z[1] -> groupby using group
+    # zip-> [('a',1),('b',0),('c',1),('d',1)]
+    # groupby(,key) -> [('a',1)], [('b',0)], [('c',1),('d',1)]
+    groupby(zip(words, groups))
+    groupby(zip(words, groups),key=lambda z:z[1])
+    for _, g in groupby(zip(words, groups), key=lambda z: z[1])
+    # next() -> Take only the first item from the group
+    # next(g)[0] first item's char like words
+    # [for] is List Comprehension
+    next(g)[0] for _, g in groupby(zip(words, groups), key=lambda z: z[1])
+    return [next(g)[0] for _, g in groupby(zip(words, groups), key=lambda z: z[1])]
+```
 
 ## hard
 [daily-3337](https://leetcode.cn/problems/total-characters-in-string-after-transformations-ii/description/?envType=daily-question&envId=2025-05-14)@dp, 矩阵乘法, 快速幂
