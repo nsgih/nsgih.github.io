@@ -75,7 +75,53 @@ from itertools import groupby
     next(g)[0] for _, g in groupby(zip(words, groups), key=lambda z: z[1])
     return [next(g)[0] for _, g in groupby(zip(words, groups), key=lambda z: z[1])]
 ```
+## medium
 
+[daily2901](https://leetcode.cn/problems/longest-unequal-adjacent-groups-subsequence-ii/description/?envType=daily-question&envId=2025-05-16)@后缀dp，from_路径数组，hamming距离
+```python
+class Solution:
+    def getWordsInLongestSubsequence(self, words: List[str], groups: List[int]) -> List[str]:
+        # hamming dis==1 and same len
+        def check(s: str,t: str)->bool:
+            a = sum(x!=y for x,y in zip(s,t))
+            sn,tn=len(s),len(t)
+            return sn==tn and a==1
+
+        n=len(words)
+        f=[0]*n ##
+        from_=[0]*n 
+        max_i=n-1
+
+        # how to get max_i
+        # what is f[]? 子序列的第一个字串是words[i]前提下，从后缀i到n-1中能选出的lss的长度
+        for i in range(n-1,-1,-1): # -1 ~ before first elem and last elem
+            # const i
+            for j in range(i+1,n): # [i~,j]
+                # f~> and goups diff and check true
+                # then update i with j
+                # from_ index i j
+                if f[j]>f[i] and groups[j] != groups[i] and check(words[i],words[j]):
+                    f[i]=f[j]
+                    from_[i]=j
+            # f[i]+=1
+            f[i]+=1
+            # update max f[i] idx
+            if f[i]>f[max_i]:
+                max_i = i
+
+        # get max_i and traverse words into ans      
+        i = max_i
+        ans = ['']*f[i]
+        for k in range(f[i]):
+            ans[k] = words[i]
+            i = from_[i]
+        return ans
+'''
+n, words, groups
+hamming distance: 等长字串的最小替换字串数量（描述性）。形式化地，等长字串或向量上相同位置但相应符号不同的数目之和，称作汉明距离。
+
+'''
+```
 ## hard
 [daily-3337](https://leetcode.cn/problems/total-characters-in-string-after-transformations-ii/description/?envType=daily-question&envId=2025-05-14)@dp, 矩阵乘法, 快速幂
 
