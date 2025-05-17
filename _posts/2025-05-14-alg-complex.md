@@ -162,6 +162,83 @@ hamming distance: 等长字串的最小替换字串数量（描述性）。形�
 '''
 ```
 ## hard
+[1931](https://leetcode.cn/problems/painting-a-grid-with-three-different-colors/description/?envType=daily-question&envId=2025-05-18)@递归，递推，邻接表，dfs(i,j)表示i列的方案对象j（j:=0..len(nv)-1），状态压缩，过滤，dp
+```python
+class Solution:
+    def colorTheGrid(self, m: int, n: int) -> int:
+        # 有效列方案valid
+        pow3 = [3 ** i for i in range(m)] # 5*6 [1,3,9,27,81]
+        valid = []
+        for color in range(3 ** m):
+            for i in range(1, m):
+                if color // pow3[i] % 3 == color // pow3[i - 1] % 3:  # 相邻颜色相同
+                    break
+            else:  # 没有中途 break，合法
+                valid.append(color)
+
+        # 邻接表nxt，状态转移表nxt
+        # nxt[j] = [...] 表示i（例如012）可以到j（201，120，...）
+        nv = len(valid)
+        nxt = [[] for _ in range(nv)]
+        for i, color1 in enumerate(valid):
+            for j, color2 in enumerate(valid):
+                for p3 in pow3:
+                    if color1 // p3 % 3 == color2 // p3 % 3:  # 相邻颜色相同
+                        break
+                else:  # 没有中途 break，合法
+                    nxt[j].append(i) # 当前列是i可以从j转移过来（谁可以转过来）
+        print(nxt)
+
+        MOD = 1_000_000_007
+        @cache  # 缓存装饰器，避免重复计算 dfs（一行代码实现记忆化）
+        def dfs(i: int, j: int) -> int:
+            if i == 0:
+                return 1  # 找到了一个合法涂色方案
+            return sum(dfs(i - 1, k) for k in nxt[j]) % MOD
+        
+        # 方案对象j从0~nv
+        # 对于方案对象j，nxt[j]中所有的方案对象需要被上层列数遍历 
+        # 特别的，当h==0时，dfs(i=0,j=x)代表对于m*i的matrix，;右边第i+1=1列填的是x的方案对象时的涂色方案数，亦即1
+        return sum(dfs(n - 1, j) for j in range(nv)) % MOD
+
+# dfs(i,j) m*i网格，i+1填的是valid[j]情况下的涂色方案数量
+# 枚举valid[j]
+# @邻接表nxt,
+# @枚举列数col n和方案数k（in nxt）
+# @dfs(n,j)代表枚举n+1列填充方案j(3)时候的
+# 转移方程sum
+
+# 1:1翻译成递推
+class Solution:
+    def colorTheGrid(self, m: int, n: int) -> int:
+        pow3 = [3 ** i for i in range(m)]
+        valid = []
+        for color in range(3 ** m):
+            for i in range(1, m):
+                if color // pow3[i] % 3 == color // pow3[i - 1] % 3:  # 相邻颜色相同
+                    break
+            else:  # 没有中途 break，合法
+                valid.append(color)
+
+        nv = len(valid)
+        nxt = [[] for _ in range(nv)]
+        for i, color1 in enumerate(valid):
+            for j, color2 in enumerate(valid):
+                for p3 in pow3:
+                    if color1 // p3 % 3 == color2 // p3 % 3:  # 相邻颜色相同
+                        break
+                else:  # 没有中途 break，合法
+                    nxt[i].append(j)
+
+        MOD = 1_000_000_007
+        f = [[0] * nv for _ in range(n)]
+        f[0] = [1] * nv  # dfs 的递归边界就是 DP 数组的初始值
+        for i in range(1, n):
+            for j in range(nv):
+                f[i][j] = sum(f[i - 1][k] for k in nxt[j]) % MOD
+        return sum(f[-1]) % MOD  # 递归入口就是答案
+```
+
 [daily-3337](https://leetcode.cn/problems/total-characters-in-string-after-transformations-ii/description/?envType=daily-question&envId=2025-05-14)@dp, 矩阵乘法, 快速幂
 
 ```python
