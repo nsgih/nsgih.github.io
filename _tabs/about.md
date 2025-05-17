@@ -4,6 +4,9 @@ icon: fas fa-info-circle
 order: 4
 ---
 <p style="color: #1b1b1e;">#1b1b1e 向你问好:)</p>
+
+
+## <i class="fa-solid fa-toggle-off"></i>Badge
 [![Static Badge](https://img.shields.io/badge/Badges-Static-55acee?style=flat&logo=shieldsdotio&logoSize=auto)](https://shields.io/badges)
 [![Static Badge](https://img.shields.io/badge/simpleicons-icon-55acee?logo=simpleicons&logoSize=auto)](https://simpleicons.org/?q=shields)
 [![Static Badge](https://img.shields.io/badge/chirpy--starter-template-%23181717?logo=github&logoColor=%23181717&logoSize=auto)](https://github.com/cotes2020/chirpy-starter)
@@ -14,7 +17,6 @@ order: 4
 [![Static Badge](https://img.shields.io/badge/FrontAwesome-icon-55acee?logo=fontawesome&logoColor=%23538DD7)](https://fontawesome.com/search)
 [![Static Badge](https://img.shields.io/badge/Favicon-fav--icon-55acee?logo=starbucks&logoColor=%23006241)](https://realfavicongenerator.net/)
 
-## <i class="fa-solid fa-toggle-off"></i>Badge
 badge暂时是基于sheield.io的静态版本，超链接通过md语法中对图片超链接实现。
 
 ## <i class="fa-solid fa-toggle-off">  </i>Reference
@@ -33,3 +35,5 @@ badge暂时是基于sheield.io的静态版本，超链接通过md语法中对图
 - [antfu@开源玩家](https://antfu.me/)
 - [@博客看板娘](https://gardencavy.site/course/blog/blog03/)
 - [医学统计学@王超辰](https://wangcc.me/LSHTMlearningnote/)
+
+

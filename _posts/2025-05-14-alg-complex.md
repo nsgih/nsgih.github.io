@@ -5,6 +5,20 @@ date: 2025-05-14 23:43 +0800
 tag: complex
 ---
 ## 脚手架
+
+### [排序sort](https://visualgo.net/zh/sorting)
+
+- 快排
+```python
+def sort(arr):
+    if len(arr)<=1:
+        return arr
+
+    pivot = arr[0]
+    left=[x for x in arr[1:] if x<=pivot]
+    right=[x for x in arr[1:] if x>pivot]
+    return sort(left)+[pivot]+sort(right)
+```
 ### python
 - list comprehension
 
@@ -42,6 +56,31 @@ tag: complex
 子问题、状态定义、转移方程
 
 ## easy
+[75](https://leetcode.cn/problems/sort-colors/?envType=daily-question&envId=2025-05-17)@排序，插入排序，冒泡排序，快速排序
+
+```python
+class Solution:
+    def sortColors(self, nums: List[int]) -> None:
+        # 插入排序O(n2)
+        for i in range(1,len(nums)):
+            key = nums[i]
+
+            j=i-1
+            while j>=0 and nums[j]>key: 
+                nums[j+1],nums[j]=nums[j],nums[j+1]
+                j-=1
+                p0 = p1 = 0
+        # 双指针优化O(n)
+        for i, x in enumerate(nums):
+            nums[i] = 2
+            if x <= 1:
+                nums[p1] = 1
+                p1 += 1
+            if x == 0:
+                nums[p0] = 0
+                p0 += 1
+```
+
 daily-2900@python,.append(x),.insert(0,x),.pop(x),.pop(0,x),.extend(other)
 ```python
 class Solution:
