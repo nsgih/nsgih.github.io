@@ -56,6 +56,30 @@ def sort(arr):
 子问题、状态定义、转移方程
 
 ## easy
+3024@三角不等式($abs(a-b)<c<a+b$)，tuple，set，哈希
+```python
+class Solution:
+    def triangleType(self, nums: List[int]) -> str:
+        # 对于a>b>c 三角不等式只剩下b+c>a非平凡
+        nums.sort()
+        a,b,c = nums
+        if a+b<=c:
+            return "none"
+        if a==c:
+            return "equilateral"
+        if a==b or b==c:
+            return "isosceles"
+        return "scalene"
+
+        # 哈希表，元素c=1等边，c=2等腰，c=3不等边
+        nums.sort()
+        if nums[0]+nums[1]<=nums[2]: 
+            return "none"
+        # tuple有序，不可变；set去重
+        return ("equilateral","isosceles","scalene")[len(set(nums))-1]
+
+```
+
 [75](https://leetcode.cn/problems/sort-colors/?envType=daily-question&envId=2025-05-17)@排序，插入排序，冒泡排序，快速排序
 
 ```python
@@ -162,7 +186,7 @@ hamming distance: 等长字串的最小替换字串数量（描述性）。形�
 '''
 ```
 ## hard
-[1931](https://leetcode.cn/problems/painting-a-grid-with-three-different-colors/description/?envType=daily-question&envId=2025-05-18)@递归，递推，邻接表，dfs(i,j)表示i列的方案对象j（j:=0..len(nv)-1），状态压缩，过滤，dp
+[1931](https://leetcode.cn/problems/painting-a-grid-with-three-different-colors/description/?envType=daily-question&envId=2025-05-18)@递归，递推，邻接表，dfs(i,j)表示i列的方案对象j（j:=0..len(nv)-1），状态压缩，过滤，dp，for-else
 ```python
 class Solution:
     def colorTheGrid(self, m: int, n: int) -> int:
