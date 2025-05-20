@@ -139,19 +139,32 @@ from itertools import groupby
     return [next(g)[0] for _, g in groupby(zip(words, groups), key=lambda z: z[1])]
 ```
 ## medium
-[3355](https://leetcode.cn/problems/zero-array-transformation-i/description/?envType=daily-question&envId=2025-05-20)@diff,前缀和
+[3355](https://leetcode.cn/problems/zero-array-transformation-i/description/?envType=daily-question&envId=2025-05-20)@diff,前缀和accumulate()
 ```python
 class Solution:
     def isZeroArray(self, nums: List[int], queries: List[List[int]]) -> bool:
+        # l..r 之间自由减一，最终nums是否都<=0 aka not >0
+        # r+1位置需要操作，因此len()+1防止越界
         diff=[0]*(len(nums)+1)
+
+        # 懒惰记录l..r进行减一
+        # 例如
+        # 1.对[0,0,0,0,0]的[1,4]加一，记作f([0,0,0,0,0,0],plus_one)=[0,+1,0,0,0,-1]
+        # 2.还原accumulate([0,1,0,0,0,-1])=[0,1,1,1,1,1-1=0]=[0,1,1,1,1,0]
+        # 得到1之差分数组[0,1,0,0,0,-1], 以及还原数组[0,1,1,1,1,0]
+        # 于是得到差分数组操作f(l,+1,r+1,-1，diff[len(nums)+1])
         for l,r in queries:
             diff[l]+=1
             diff[r+1]-=1
         
-        for x,sum_d in zip(nums,accumulate(diff)):
+        # accumulate() 前缀和 
+        # 例如accumulate([1,2,3,4]) = [1,1+2=3,1+2+3=6,1+2+3+4=10] = [1,3,6,10]
+        # accumulate()还原每个位置操作次数
+        for x,sum_d in zip(nums,accumulate(diff)): 
+            # sum_d是最多被减次数，大于说明不合法
             if x>sum_d:
                 return False
-        return True        
+        return True
 ```
 
 [daily2901](https://leetcode.cn/problems/longest-unequal-adjacent-groups-subsequence-ii/description/?envType=daily-question&envId=2025-05-16)@后缀dp，from_路径数组，hamming距离
