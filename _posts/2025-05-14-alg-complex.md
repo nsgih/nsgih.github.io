@@ -139,6 +139,20 @@ from itertools import groupby
     return [next(g)[0] for _, g in groupby(zip(words, groups), key=lambda z: z[1])]
 ```
 ## medium
+[3355](https://leetcode.cn/problems/zero-array-transformation-i/description/?envType=daily-question&envId=2025-05-20)@diff,前缀和
+```python
+class Solution:
+    def isZeroArray(self, nums: List[int], queries: List[List[int]]) -> bool:
+        diff=[0]*(len(nums)+1)
+        for l,r in queries:
+            diff[l]+=1
+            diff[r+1]-=1
+        
+        for x,sum_d in zip(nums,accumulate(diff)):
+            if x>sum_d:
+                return False
+        return True        
+```
 
 [daily2901](https://leetcode.cn/problems/longest-unequal-adjacent-groups-subsequence-ii/description/?envType=daily-question&envId=2025-05-16)@后缀dp，from_路径数组，hamming距离
 ```python
