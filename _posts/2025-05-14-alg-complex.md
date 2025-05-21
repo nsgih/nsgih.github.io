@@ -6,7 +6,109 @@ tag: complex
 ---
 ## 脚手架
 
-### [排序sort](https://visualgo.net/zh/sorting)
+### 二分
+
+@3356II
+
+| 区间类型                  | 初始范围            | 循环条件    | 更新方式                    |
+| ------------------------- | ------------------- | ----------- | --------------------------- |
+| **左闭右闭 `[l, r]`**     | `l=0, r=n-1`        | `l <= r`    | `l = mid + 1 / r = mid - 1` |
+| **左闭右开 `[l, r)`**     | `l=0, r=n`          | `l < r`     | `l = mid + 1 / r = mid`     |
+| **两端开区间 `(l, r)`** ✅ | `l = -1, r = n + 1` | `l + 1 < r` | `r = mid / l = mid`         |
+
+```python
+# (l,r)
+# 双开直接更新为mid，开区间不断丢包
+left, right = -1, q + 1        # 初始化为超出范围的边界
+while left + 1 < right:        # 保证区间至少还有一个候选
+    mid = (left + right) // 2
+    if check(mid):             
+        right = mid            # 答案在左边，收缩右边界（仍然保留 mid）
+    else:
+        left = mid             # 答案在右边，收缩左边界
+return right if right<=q else -1
+
+# [l,r)
+# 单开闭区间一端更新为mid+1
+l, r = 0, n  # 注意 r = n
+while l < r:
+    mid = (l + r) // 2
+    if check(mid):  # mid 满足条件，可能是答案
+        r = mid     # 缩小右边界（仍然保留 mid）
+    else:
+        l = mid + 1 # mid 不满足，丢弃 mid
+return l if l<=q else -1
+
+# [l,r]
+# 双闭直接l,r = mid+1,r=mid-1
+# 当check()==True则在right中保留mid
+l, r = 0, n - 1
+res = -1  # 用来记录答案
+while l <= r:
+    mid = (l + r) // 2
+    if check(mid):     # mid 满足，保留答案
+        res = mid      # 或直接 return mid，如果找第一个满足的即可
+        r = mid - 1    # 向左边继续找
+    else:
+        l = mid + 1
+return res if res<=q else -1
+```
+#### Q：返回l|r|res？
+
+引入循环不变量分析视角。
+```python
+# 全开 退出时 left + 1 == right
+(-∞ … -1]     (left)  (right)     [q+1 … +∞)
+    全 False    ?      全 True
+
+# 左开右闭 循环终止条件是 l == r，此时区间空
+ 已判定    [l, r) 待判定
+全 False     ?        全 True
+
+# 全闭 循环退出条件 l > r 时，l 指向“第一个 可能为 True 的位置”
+# 但如果根本没有 True，l 会超出右端；
+# 如果在过程中把 mid 丢过头，也会导致 l 越过答案。
+# res 保存了“最后一次见到的 True”，才是可靠答案
+[l,       mid-1] mid [mid+1,       r]
+   未知             ✓/✗            未知
+
+于是：
+
+```
+| 模板              | 不变量里“答案”停留的位置 | 退出时哪一指针一定指向答案 | 是否需要额外变量 |
+| ----------------- | ------------------------ | -------------------------- | ---------------- |
+| `(l, r)` 两端开   | `right` 侧               | `right`                    | 否               |
+| `[l, r)` 左闭右开 | 两指针重合时的位置       | `l` (=`r`)                 | 否               |
+| `[l, r]` 左闭右闭 | 可能被边界跨过           | 不保证，需要 `res`         | 是               |
+
+#### l,r双指针维护的是可行解区间吗？
+
+并非如此：
+
+| 区间类型 | 区间表示的含义         | 是否是“可行解区间”   |
+| -------- | ---------------------- | -------------------- |
+| `(l, r)` | 候选解区间（不含端点） | ❌ 含可行解，但不全是 |
+| `[l, r)` | 未知区间 / 未排除区间  | ❌ 可能混合 F 和 T    |
+| `[l, r]` | 搜索过程区间           | ❌ 可能混合 F 和 T    |
+| `res`    | 最后存下来的合法解     | ✅ 是可行解之一       |
+
+
+
+
+### 线段树
+
+维护区间信息的数据类型，在Ologn实现单点修改、区间修改、区间查询（求和、最大值、最小值）等操作。
+
+**普通线段树(Segement Tree，下称ST)**，依照维护属性不同分为区间和ST、区间最大值ST、区间最小值ST、区间乘积ST、区间GCD的ST、区间异或的ST。支持区间查询[l,r]的和、最值，单点修改a[i]修改。
+
+**带懒标记的线段树（Lazy ST）**则是用标记延迟更新。
+
+```python
+O_Create=On
+O_Read_or_Updare=Ologn
+```
+
+### [排序sort](https://visualgo.net/zh/sorting)*
 
 - 快排
 ```python
@@ -177,8 +279,8 @@ class Solution:
         
         # k越大越满足要求，于是单调，于是可以二分
         q=len(queries)
-        left,right = -1,q+1
-        while left+1<right: # log q
+        left,right = -1,q+1 # 一眼开区间二分 
+        while left+1<right: # log q，保证区间至少还有一个候选
             mid=(left+right)//2
             if check(mid):
                 right=mid
@@ -242,17 +344,23 @@ class Solution:
         # o(n+q)
         diff=[0]*(len(nums)+1)
         sum_d=k=0
+        # 外层On，内层Oq。
+        # i，k负责nums，queries的双指针
+        # 外层遍历nums是On，但是内层一共只走一次queries，于是O（n+q）
+        
+        # 引入摊销分析（Amortized）视角。
+        # 相比单次更关心一系列耗时不高的情况，在本情况即为此。
+        # 其他例子还有滑动窗口，双指针，并查集路径压缩，栈模拟
         for i,(x,d) in enumerate(zip(nums,diff)):
             sum_d+=d
-            # 需要添加询问把x减小
-            while k< len(queries) and sum_d<x:
+            while k< len(queries) and x >sum_d: # 需要添加询问把x减小
                 l,r,val=queries[k]
                 diff[l]+=val
                 diff[r+1]-=val
-                if l<= i <=r:
+                if l<= i <=r: # x 在更新范围中
                     sum_d+=val
                 k+=1
-            if sum_d<x:
+            if sum_d<x: # 无法更新
                 return -1
         return k
 ```
