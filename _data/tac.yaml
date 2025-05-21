@@ -1,0 +1,26 @@
+# tags and categories
+# 标签字典
+tags:
+  # 表示维护中
+  - lts 
+  # 表示当日歇逼
+  - Deactivated
+  # 表示情结 
+  - complex 
+
+# 分类字典
+categories:
+  # 梦
+  - Dreams 
+  # 游记
+  - Travel 
+    - Abroad  
+  # 经验
+  - log
+    - ptj
+  # shell lang
+  - shell
+    - windows
+  # chirpy自带教程分类
+  - tutorial
+    - writing

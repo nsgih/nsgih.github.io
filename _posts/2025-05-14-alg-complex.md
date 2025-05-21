@@ -139,6 +139,124 @@ from itertools import groupby
     return [next(g)[0] for _, g in groupby(zip(words, groups), key=lambda z: z[1])]
 ```
 ## medium
+
+[3356II](https://leetcode.cn/problems/zero-array-transformation-ii/description/?envType=daily-question&envId=2025-05-21)@差分，二分 @lazy线段树 @双指针
+```python
+class Solution:
+    def minZeroArray(self, nums: List[int], queries: List[List[int]]) -> int:
+        # RTE
+        # if set(nums)=={0}:
+        #     return 0
+        # k=0
+        # diff=[0]*(len(nums)+1)
+        # for (l,r,val) in queries: # Oq
+        #     k+=1
+        #     diff[l]+=val
+        #     diff[r+1]-=val
+        #     for x,sum_d in zip(nums,accumulate(diff)): # On
+        #         # 至少有一个捡不完，那么就推出
+        #         if x > sum_d:
+        #             break
+        #     else:
+        #         # no exit then
+        #         return k
+        # return -1
+        
+        # @差分，二分
+        # 开区间写法
+        # 二分优化到 O((n+q)logq)
+        def check(k:int)->bool: # O(q+n)
+            diff=[0]*(len(nums)+1)
+            for l,r,val in queries[:k]:
+                diff[l],diff[r+1] = diff[l]+val, diff[r+1]-val
+            
+            for x,sum_d in zip(nums,accumulate(diff)):
+                if x>sum_d:
+                    return False
+            return True
+        
+        # k越大越满足要求，于是单调，于是可以二分
+        q=len(queries)
+        left,right = -1,q+1
+        while left+1<right: # log q
+            mid=(left+right)//2
+            if check(mid):
+                right=mid
+            else:
+                left=mid
+        return right if right<=q else -1
+
+        # @lazy线段树 
+        # 线段树 O(n+qlogn)
+        n=len(nums)
+        m=2<<n.bit_length()
+        mx=[0]*m
+        todo=[0]*m
+
+        def do(o:int,v:int)->None:
+            mx[o]-=v
+            todo[o]+=v
+
+        def spread(o:int)->None:
+            if todo[o] != 0:
+                do(o*2,todo[o])
+                do(o*2+1,todo[o])
+                todo[o]=0
+        
+        def maintain(o:int)->None:
+            mx[o]=max(mx[o*2],mx[o*2+1])
+        
+        def build(o:int,l:int,r:int)->None:
+            if l==r:
+                mx[o]=nums[l]
+                return
+            m=(l+r)//2
+            build(o*2,l,m)
+            build(o*2+1,m+1,r)
+            maintain(o)
+
+        def update(o:int,l:int,r:int,ql:int,qr:int,v:int)->None:
+            if l>=ql and r <= qr:
+                do(o,v)
+                return
+            spread(o)
+            m=(r+l)//2
+            if ql<=m:
+                update(o*2,l,m,ql,qr,v)
+            if m<qr:
+                update(o*2+1,m+1,r,ql,qr,v)
+            maintain(o)
+
+        build(1,0,n-1)
+        if mx[1]<=0:
+            return 0
+
+        for i,(ql,qr,v) in enumerate(queries):
+            update(1,0,n-1,ql,qr,v)
+            if mx[1]<=0:
+                return i+1
+        return -1
+
+        # @双指针
+        # 差分，双指针
+        # o(n+q)
+        diff=[0]*(len(nums)+1)
+        sum_d=k=0
+        for i,(x,d) in enumerate(zip(nums,diff)):
+            sum_d+=d
+            # 需要添加询问把x减小
+            while k< len(queries) and sum_d<x:
+                l,r,val=queries[k]
+                diff[l]+=val
+                diff[r+1]-=val
+                if l<= i <=r:
+                    sum_d+=val
+                k+=1
+            if sum_d<x:
+                return -1
+        return k
+```
+
 [3355](https://leetcode.cn/problems/zero-array-transformation-i/description/?envType=daily-question&envId=2025-05-20)@diff,前缀和accumulate()
 ```python
 class Solution:
