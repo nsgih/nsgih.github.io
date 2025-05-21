@@ -26,5 +26,11 @@
   // Run tasks in macOS
   "terminal.integrated.profiles.osx": {
     "zsh": { "path": "/bin/zsh", "args": ["-l", "-i"] }
-  }
+  },
+  "frontMatter.git.enabled": false,
+  "frontMatter.content.pageFolders": [
+    {
+      "path": "[[workspace]]/_tabs"
+    }
+  ]
 }
