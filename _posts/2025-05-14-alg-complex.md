@@ -4,7 +4,14 @@ title: alg complex
 date: 2025-05-14 23:43 +0800
 tag: complex
 ---
+
+[![Static Badge](https://img.shields.io/badge/%E7%81%B5%E7%A5%9E-%E7%A7%91%E5%AD%A6%E5%88%B7%E9%A2%98-55acee?logo=leetcode&logoColor=%23FFA116)](https://leetcode.cn/discuss/post/3141566/ru-he-ke-xue-shua-ti-by-endlesscheng-q3yd/)
+
 ## 脚手架
+
+### 排列、组合
+
+排列（Permutations），组合（Combinations）
 
 ### 二分
 
@@ -152,9 +159,97 @@ def sort(arr):
 (a,b).elem = |b-a| + -1 = b-a-1
 ```
 ### dp
+
 子问题、状态定义、转移方程
 
+
 ## easy
+
+
+746@dp,pairwise,
+```python
+class Solution:
+    def minCostClimbingStairs(self, cost: List[int]) -> int:
+        # # len(cost):= 2..1000 说明终点位置是下标len(cost)地方
+        # # 从0到i最小花费(不包括终点)
+        # @cache
+        # def dfs(i:int)->int:
+        #     if i==0: # 累计路费0
+        #         return 0
+        #     if i==1: # 累计路费0
+        #         return 0
+    
+        #     if i==2: # 边界
+        #         return min(cost[:2])
+            
+        #     return min(dfs(i-1)+cost[i-1],dfs(i-2)+cost[i-2])
+        
+        # return dfs(len(cost))
+
+        # f=[0]*(len(cost)+1)
+        # for i in range(2,len(f)):
+        #     f[i]=min(f[i-1]+cost[i-1],f[i-2]+cost[i-2])
+        # return f[-1]
+
+        # # @空间优化，注意写成range(1,nc)的情况
+        # nc=len(cost)
+        # f0=f1=0
+        # for i in range(2,nc+1): # 改成1,n也可以,循环语句相应也要改就是
+        #     new_f = min(f1+cost[i-1],f0+cost[i-2])
+        #     f0=f1
+        #     f1=new_f
+        # return f1
+
+        # @c0,c1 in pairwise写法
+        f0=f1=0
+        for (c0,c1) in pairwise(cost):
+            f0,f1 = f1, min(f1+c1,f0+c0)
+        return f1
+```
+
+70爬楼梯@dp,dfs,down-to-up,cache
+```python
+class Solution:
+    def climbStairs(self, n: int) -> int:
+        # # deep first search
+        # # 定义为从0到i所有方法数目和
+        # # 边界是dfs(0)==dfs(1)==1
+        # def dfs(i:int)->int:
+        #     if i<=1: # 边界
+        #         return 1
+        #     return dfs(i-1)+dfs(i-2)
+        # return dfs(n)
+
+        # # @dfs,cache
+        # # dp时间复杂度=状态个数*单个状态计算时间=O(n*1)=On
+        # @cache
+        # def dfs(i:int)->int:
+        #     if i<=1:
+        #         return 1
+        #     return dfs(i-1)+dfs(i-2)
+        # return dfs(n)
+
+        # # @down-to-up
+        # # f[]数学等价于dfs()，只不过这边用递推
+        # f=[0]*(n+1)
+        # f[0]=f[1]=1
+        # for i in range(2,n+1):
+        #     # f2=f1+f0 2,1,0
+        #     # f3=f2+f1 3,2,1
+        #     # f4=f3+f2 4,3,2
+        #     # f5=f4+f3 5,4,3
+        #     f[i]=f[i-1]+f[i-2]
+        # return f[n]
+
+        # @优化空间意义不大
+        f0=f1=1
+        for _ in range(2,n+1):
+            new_f = f0+f1
+            f0=f1
+            f1=new_f
+        return f1
+```
+
 3024@三角不等式($abs(a-b)<c<a+b$)，tuple，set，哈希
 ```python
 class Solution:
@@ -238,6 +333,87 @@ from itertools import groupby
     return [next(g)[0] for _, g in groupby(zip(words, groups), key=lambda z: z[1])]
 ```
 ## medium
+
+
+2266@70爬楼梯，相对索引（dp、滑动窗口），dp，迭代器只能使用一次，list(groupby()[1])=["2","2","2"],list(groupby()[0])='2'
+```python
+MOD=1_000_000_007
+f=[1,1,1+1,1+2+1] # 不为7/9
+g=[1,1,1+1,1+2+1] # 7/9
+
+# # f[i]/g[i] 定义为爬楼dp，表示长为i的只有一种字符串的字符所对应的文字信息种类
+# for i in range(3+1, 10**5):
+#     f.append((f[i-1] + f[i - 2] + f[i - 3]) % MOD)
+#     g.append((g[i-4] + g[i - 1] + g[i - 2] + g[i - 3]) % MOD)
+
+# 优化写法
+# f相对索引，滑动窗口式状态转移，只关心前三个状态
+# g相对索引，滑动窗口式状态转移，只关心前四个状态 
+for _ in range(10**5-3):
+    f.append((f[-1]+f[-2]+f[-3])%MOD) # case按一次 + case按二次 + case按三次
+    g.append((g[-1]+g[-2]+g[-3]+g[-4])%MOD)
+
+class Solution:
+    def countTexts(self, pressedKeys: str) -> int:
+        ans=1
+        for ch,s in groupby(pressedKeys): # 迭代器只能用一次
+            # 222332~ 2, group list化后是['2','2','2'] ~ 
+            m=len(list(s)) # 长度m
+
+            # 乘法原理，每次打字都是独立字串
+            ans*= (g[m] if ch in "79" else f[m])%MOD # 要么79要么非79
+        return ans%MOD
+```
+
+2466@70爬楼梯，dp
+```python
+class Solution:
+    def countGoodStrings(self, low: int, high: int, zero: int, one: int) -> int:
+        # nums=[zero,one]爬楼梯，排列
+        # 在长为i-zero的字符串末尾家zero个0，方案数f[i-zero]
+        # 在长为i-one的字符串末尾家one个1，方案数f[i-one]
+        # 二者互斥，所以所有case=f[i-zero]+f[i-one]
+
+        # 爬楼梯相当于zero,one=1,2
+        # dp[i]=dp[i-1]+dp[i-2]
+
+        # f[0]=1表示空串的方案数是1
+        MOD=1_000_000_007
+        @cache
+        def dfs(i:int)->int:
+            if i<0:
+                return 0
+            if i==0:
+                return 1
+            return (dfs(i-zero)+dfs(i-one))%MOD
+
+        return sum(dfs(i) for i in range(low,high+1)) %MOD
+        
+```
+
+377@排列（Permutation），类爬楼梯（每步决策消耗val），70爬楼梯
+```python
+class Solution:
+    def combinationSum4(self, nums: List[int], target: int) -> int:
+        # # dfs爬i个台阶的方案数
+        # # 最后一步爬了x
+        # # i-x台阶方案数
+        # @cache
+        # def dfs(i:int)->int:
+        #     if i==0:
+        #         return 1
+        #     # 为什么最后一步爬x（x<=i）,然后枚举i是完全的？
+        #     # 状态个数target, 状态计算时间n
+        #     # 所以O(target*n)
+        #     return sum(dfs(i-x) for x in nums if x<=i)
+        # return dfs(target)
+
+        # @down-to-up
+        f=[1]+[0]*target # f[0]方案为1
+        for i in range(1,target+1):
+            f[i] = sum(f[i-x] for x in nums if i>=x) # 为什么要i>=x?
+        return f[target]    
+```
 
 [3362III](https://leetcode.cn/problems/zero-array-transformation-iii/?envType=daily-question&envId=2025-05-22)@反悔贪心，最大堆（完全二叉、父节点>=子节点，取负模拟最大），O(qlogq)
 ```python
