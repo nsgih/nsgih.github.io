@@ -239,6 +239,31 @@ from itertools import groupby
 ```
 ## medium
 
+[3362III](https://leetcode.cn/problems/zero-array-transformation-iii/?envType=daily-question&envId=2025-05-22)@反悔贪心，最大堆（完全二叉、父节点>=子节点，取负模拟最大），O(qlogq)
+```python
+class Solution:
+    def maxRemoval(self, nums: List[int], queries: List[List[int]]) -> int:
+        # 最大堆维护左端点未选区间的右端点
+        # 反悔贪心，用heap维护
+        queries.sort(key=lambda q:q[0]) # 左端点ascending排序
+        h=[]
+        diff=[0]*(len(nums)+1)
+        sum_d=j=0
+        for i,x in enumerate(nums):
+            sum_d+=diff[i]
+            # 维护左端点<=i的区间
+            while j<len(queries) and queries[j][0]<=i:
+                heappush(h,-queries[j][1]) # 相反表示最大堆
+                j+=1
+            # 选择右端点最大区间
+            while sum_d<x and h and -h[0]>=i:
+                sum_d+=1
+                diff[-heappop(h)+1]-=1
+            if sum_d<x:
+                return -1
+        return len(h)
+```
+
 [3356II](https://leetcode.cn/problems/zero-array-transformation-ii/description/?envType=daily-question&envId=2025-05-21)@差分，二分 @lazy线段树 @双指针
 ```python
 class Solution:
