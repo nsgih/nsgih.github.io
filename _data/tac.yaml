@@ -24,3 +24,6 @@ categories:
   # chirpy自带教程分类
   - tutorial
     - writing
+  # 日常更新
+  - daily
+    - shanghai

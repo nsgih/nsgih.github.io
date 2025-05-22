@@ -104,3 +104,17 @@ bundle exec jekyll rename _drafts/my-renamed-draft.md "My new draft"
 我从vs扩展（`ctrl+shfit+x`）下载了`Markdown All in One`和`Markdown Shortcuts`用于md编辑和快捷键。
 
 `ctrl+M`+`ctrl+M`十分方便。
+
+## vscode-自定义复制文件地址
+
+1. `ctrl`+`,`打开设置，并输入`markdown.copy`
+2. 找到markdown> Copy Files: Destination
+3. 输入键值对：`**/*.md` | `../assets/2025-05/${fileName}`，将本月图片都放到2025-05。
+4. 之后更新文件即可。
+
+```python
+# 通配符（globbing pattern）匹配说明
+*.md 只会匹配 project/a.md
+*/*.md 只会匹配 docs/b.md（只深入一层）
+**/*.md 会匹配 a.md、docs/b.md、docs/topics/c.md，亦即任意层级
+```

@@ -5,6 +5,11 @@ order: 4
 ---
 <p style="color: #1b1b1e;">#1b1b1e 向你问好:)</p>
 
+## livestreaming
+
+[![Static Badge](https://img.shields.io/badge/livestreaming-youtube-55acee?logo=youtube&logoColor=%23FF0000)](https://www.youtube.com/@nsgih)
+
+直播，默认自己看自己，欢迎来玩。
 
 ## <i class="fa-solid fa-toggle-off"></i>Badge
 [![Static Badge](https://img.shields.io/badge/Badges-Static-55acee?style=flat&logo=shieldsdotio&logoSize=auto)](https://shields.io/badges)
