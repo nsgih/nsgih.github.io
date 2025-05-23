@@ -9,6 +9,37 @@ tag: complex
 
 ## 脚手架
 
+### xor and or
+
+```python
+# 用or实现xor
+P or P # inclusive
+(P or Q) and not (P and Q) # exclusive
+```
+
+#### 对称加密
+
+```python
+# plaintext, key, ciphertext 加密,
+p,k = "hi there", 27
+
+# 1.凯撒加密，偏移加密
+def caesar_cipher(p,shift):
+    # 也可以用ch.isupper()/.islower()去条件分支
+    return ''.join(chr(((ord(char)-65)+shift)%26+65) for char in p.upper())
+
+# 2. xor加密
+def xor_cipher(plaintext,key):
+    # 加密
+    # c=p^k
+
+    # 解密
+    # p=c^k=p^k^k
+    # =p^0 /xor反自反，亦即满足k^k=0； FYI 自反指的是k^k=k这里不成立
+    # =p ./xor的零元0，亦即满足任意k^0===k
+    return ''.join(chr(ord(char)^key) for char in plaintext)
+```
+
 ### 排列、组合
 
 排列（Permutations），组合（Combinations）
@@ -637,6 +668,51 @@ hamming distance: 等长字串的最小替换字串数量（描述性）。形�
 '''
 ```
 ## hard
+
+[3068](https://leetcode.cn/problems/find-the-maximum-sum-of-node-values/description/?envType=daily-question&envId=2025-05-23)@树形dp@结论，状态机dp@贪心
+```python
+class Solution:
+    def maximumValueSum(self, nums: List[int], k: int, edges: List[List[int]]) -> int:
+        # # @树形dp
+        # g=[[] for _ in nums]
+        # for x,y in edges:
+        #     g[x].append(y)
+        #     g[y].append(x)
+        
+        # def dfs(x:int,fa:int)->Tuple[int,int]:
+        #     f0,f1=0,-inf # f[x][0],f[x][1]
+        #     for y in g[x]:
+        #         if y!= fa:
+        #             r0,r1=dfs(y,x)
+        #             f0,f1=max(f0+r0,f1+r1),max(f1+r0,f0+r1)
+        #     return max(f0+nums[x],f1+(nums[x]^k)),max(f1+nums[x],f0+(nums[x]^k))
+        # return dfs(0,-1)[0]
+
+        # # @结论,状态机dp
+        # f0,f1 = 0,-inf
+        # for x in nums:
+        #     f0,f1 = max(f0+x,f1+(x^k)),max(f1+x,f0+(x^k))
+        # return f0
+
+        # @贪心
+        # 无向树，说明连通无向图
+        # 原问题等价转换为“树上任意两点进行^k操作，使其所有节点数值求和最大”
+        # 这样一来用贪心做是不用edges的
+        res=sum(nums)
+        diff=[(x^k)-x for x in nums]
+        diff.sort() # Onlogn
+        i=len(diff)-1
+        # Q：为什么两两枚举是遍历完全的？
+        # 等价转换之后相当于每个节点只能反转一次（XOR的反自反性质
+        # 前置条件是排序，例如排序完的[-3,-2,-1,4,5,6]
+        # [5,6]就不说了，[-1,4]受益于排序是可以要的
+        # 于是贪心配对完全遍历
+        while i>0 and diff[i]+diff[i-1]>=0:
+            res+=diff[i]+diff[i-1]
+            i-=2
+        return res
+```
+
 [1931](https://leetcode.cn/problems/painting-a-grid-with-three-different-colors/description/?envType=daily-question&envId=2025-05-18)@递归，递推，邻接表，dfs(i,j)表示i列的方案对象j（j:=0..len(nv)-1），状态压缩，过滤，dp，for-else
 ```python
 class Solution:
