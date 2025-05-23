@@ -2,7 +2,6 @@
 layout: post
 title: 如何剖斯特
 date: 2025-05-07 00:02 +0800
-pin: true
 author: nagi
 categories: [tutorial,writing]
 ---
