@@ -43,21 +43,18 @@ badge暂时是基于sheield.io的静态版本，超链接通过md语法中对图
 - [zy](https://yangzhang.site/)
 
 
-## <i class="fa-solid fa-signature"></i> 伙伴
+## <i class="fa-solid fa-database"></i> 伙伴
 
 ### 衣
 
-酒红运动短t @BJHG @135cny @贴身
+酒红运动短t @BJHG @135cny @贴身 @180/92A @74.3%棉25.7聚酯纤维 @2025-05-23
 
 ### 工具
 
-iphone12 @二手
+iphone12 @jd二手 @2298cny
 
-## <i class="fa-solid fa-database"></i> 规格
+tb后盖 @41cny
 
-### 衣
+airpods4-主动降噪 @环球港 @1399cny @2024-11-09
 
-酒红运动短t @180/92A @74.3%棉25.7聚酯纤维 @2025-05-23
-
-
-### 工具
+ipad-mini6 @转转二手95新 @2328cny
