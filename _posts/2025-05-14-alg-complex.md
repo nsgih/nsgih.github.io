@@ -401,6 +401,39 @@ from itertools import groupby
 ## medium
 
 
+[918环形子数组最大和](https://leetcode.cn/problems/maximum-sum-circular-subarray/description/)@数学，常数，分类讨论，kadane-维护局部最优的dp
+```python
+class Solution:
+    def maxSubarraySumCircular(self, nums: List[int]) -> int:
+        # 分类讨论。第一种情况，子数组没有跨边界，此时的最大子数组元素求和记作maxS
+        # 第二种情况，子数组跨边界，由于全集元素求和为常数、定值sum(nums),于是此时最大跨边界子数组元素求和=sum(nums)-minS,minS为非跨边界子数组元素求和最小
+        # 综上，取其最值ans=max(maxS,sum(nums)-minS)
+
+        # 考虑特殊情况sum(nums)可以是整个数组记作,因子数组非空，于是此状态非法
+        # 此情况下特判，返回max_s，亦即最大子数组元素求和@反证法，注意是"可以是"并非"iff"
+        # return maxS
+
+        max_s = -inf 
+        min_s = 0
+        max_f = min_f = 0
+        for x in nums:
+            max_f=max(max_f,0) + x # 局部最优
+            max_s=max(max_s,max_f) # 全局最大
+
+            min_f=min(min_f,0)+x # 局部最优
+            min_s=min(min_s,min_f) # 全局最小
+
+        # min_s==sum(nums)说明全是非正的，说明最大的也是非正的
+        return max_s if max_s<=0 else max(max_s,sum(nums)-min_s)
+
+        # # iff 最小子数组元素求和==整个数组求和，跨边界最大子数组为空
+        # if sum(nums)==min_s:
+        #     return max_s
+
+        # # 否则考虑整体求和-min_s
+        # return max(max_s,sum(nums)-min_s)
+```
+
 [1191k次串联之后最大子数组](https://leetcode.cn/problems/k-concatenation-maximum-sum/)@dp,max(sum(arr),0)分析
 ```python
 MOD=1000_000_007
@@ -422,7 +455,7 @@ class Solution:
         return ans%MOD
 ```
 
-[1749](https://leetcode.cn/problems/maximum-absolute-sum-of-any-subarray/)@前缀和，accumulate(nums,initial=0)@dp,空间优化
+[1749]任意子数组和的绝对值(https://leetcode.cn/problems/maximum-absolute-sum-of-any-subarray/)@前缀和，accumulate(nums,initial=0)@dp,空间优化
 ```python
 class Solution:
     def maxAbsoluteSum(self, nums: List[int]) -> int:
