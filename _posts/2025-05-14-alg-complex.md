@@ -399,7 +399,38 @@ from itertools import groupby
     return [next(g)[0] for _, g in groupby(zip(words, groups), key=lambda z: z[1])]
 ```
 ## medium
+[2140](https://leetcode.cn/problems/solving-questions-with-brainpower/solutions/1213919/dao-xu-dp-by-endlesscheng-2qkc/)@dp递推、递归@刷表法@never
+```python
+class Solution:
+    def mostPoints(self, questions: List[List[int]]) -> int:
+        n=len(questions)
 
+        # @cache
+        # def dfs(i)->int:
+        #     if i>=n:
+        #         return 0
+        #     return max(dfs(i+1), dfs(i+1+questions[i][1])+questions[i][0])
+
+        # return dfs(0)
+
+        f=[0]*(n+100007)
+        for i in range(n-1,-1,-1):
+            # @choice: 或者在这里强设置上界
+            # j=min(n,i+1+questions[i][1])
+            f[i]=max(f[i+1],f[i+1+questions[i][1]]+questions[i][0])
+        return f[0]
+
+        # @刷表法@never
+        n = len(questions)
+        f = [0] * (n + 1)
+        for i, (point, brainpower) in enumerate(questions):
+            f[i + 1] = max(f[i + 1], f[i])
+            j = min(i + brainpower + 1, n)
+            f[j] = max(f[j], f[i] + point)
+        return f[n]
+
+
+```
 
 [918环形子数组最大和](https://leetcode.cn/problems/maximum-sum-circular-subarray/description/)@数学，常数，分类讨论，kadane-维护局部最优的dp
 ```python
