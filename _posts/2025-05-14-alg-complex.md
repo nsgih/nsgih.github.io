@@ -7,7 +7,25 @@ tag: complex
 
 [![Static Badge](https://img.shields.io/badge/%E7%81%B5%E7%A5%9E-%E7%A7%91%E5%AD%A6%E5%88%B7%E9%A2%98-55acee?logo=leetcode&logoColor=%23FFA116)](https://leetcode.cn/discuss/post/3141566/ru-he-ke-xue-shua-ti-by-endlesscheng-q3yd/)
 
+[![alt text](../assets/2025-05/image-1.png)](https://leetcode.cn/discuss/post/3584387/fen-xiang-gun-mo-yun-suan-de-shi-jie-dan-7xgu/)_python每秒执行10e7运算\模运算_
+
 ## 脚手架
+
+### 字典dict
+
+```python
+# 对应打包生成字典mp
+mp=dict(zip(chars,vals))  
+# mp.get(c,default_value) 要么得到字典序，要么返回默认值
+mp.get(c,ord(c)-ord('a')+1) 
+
+# python@3.9 覆盖写法
+mp=dict(zip(ascii_lowercase,range(1,27))) | dict(zip(chars,vals))
+
+# chars, val eg.
+chars="abc"
+val=[-1,-1,-1]
+```
 
 ### xor and or
 
@@ -381,6 +399,56 @@ from itertools import groupby
     return [next(g)[0] for _, g in groupby(zip(words, groups), key=lambda z: z[1])]
 ```
 ## medium
+
+
+[1191k次串联之后最大子数组](https://leetcode.cn/problems/k-concatenation-maximum-sum/)@dp,max(sum(arr),0)分析
+```python
+MOD=1000_000_007
+class Solution:
+    def kConcatenationMaxSum(self, arr: List[int], k: int) -> int:
+        def kadane(arr)->int:
+            f1=f0=0
+            for i in range(len(arr)):
+                f0=max(0,f0)+arr[i]
+                f1=max(f1,f0)
+            return f1
+        
+        if k==1:
+            return kadane(arr)
+
+        ans=kadane(arr+arr)
+        # 只有当s=sum(arr)>0时，答案要s*k
+        ans+=max(sum(arr),0)*(k-2)
+        return ans%MOD
+```
+
+[1749](https://leetcode.cn/problems/maximum-absolute-sum-of-any-subarray/)@前缀和，accumulate(nums,initial=0)@dp,空间优化
+```python
+class Solution:
+    def maxAbsoluteSum(self, nums: List[int]) -> int:
+        # @dp展开写法
+        # # 禁止f1=f2=[0]可变对象赋值，a=b=0不可变对象赋值倒是可以
+        # f1,f2=[0],[0]
+        # for i in range(len(nums)):
+        #     f1.append(max(0,f1[-1])+nums[i])
+        #     f2.append(min(0,f2[-1])+nums[i])
+        # return max(max(f1),-min(f2))
+
+        # @dp空间优化写法，或者说kadane
+        # ans=up=down=0
+        # for x in nums:
+        #     # f[i] = max(f[i-1]+nums[i],nums[i])=max(f[i-1],0)+nums[i]
+        #     up=max(0,up)+x # 重开 | 不重开，拼接 ~ 维护最大
+        #     down=min(0,down)+x # 重开 | 不重开，拼接 ~ 维护最小
+        #     ans=max(ans,up,-down)
+        # return ans
+
+        # 子数组元素求和===值域数组元素点差
+        # 加个初始元素0
+        s=list(accumulate(nums,initial=0)) # 手动添加初始值
+        return max(s)-min(s)
+```
+
 [53最大子数组和@前缀和](https://leetcode.cn/problems/maximum-subarray/description/)@贪心、dp
 ```python
 class Solution:

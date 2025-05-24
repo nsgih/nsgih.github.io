@@ -10,7 +10,7 @@ date: 2025-05-24 19:38 +0800
 
 ## alg
 
-### kadane
+### dp@kadane
 
 ```python
 # kadane算法 On经典子数组和
@@ -28,4 +28,4 @@ def kadane(nums):
 return kadane(nums)
 ```
 
-![alt text](../assets/2025-05/kadane.gif)_kadane(nums)_
+![alt text](../assets/2025-05/kadane.gif)_kadane是dp的一种特殊情况_
