@@ -196,6 +196,23 @@ def sort(arr):
 
 ## easy
 
+121买卖股票的最佳时期@贪心，维护买入最小值
+```python
+class Solution:
+    def maxProfit(self, prices: List[int]) -> int:
+        # ans=0
+        # for i,x in enumerate(prices):
+        #     for j in range(i+1,len(prices)):
+        #         ans=max(ans,prices[j]-x)   
+        # return ans
+        
+        ans=0
+        local=prices[0] # 局部最小
+        for p in prices:
+            ans=max(ans, p-local) # 先更新答案、全局最大的盈利结果
+            local=min(local, p) # 再更新左侧元素最小值、局部最小的买入价格
+        return ans
+```
 
 746@dp,pairwise,
 ```python
@@ -364,7 +381,179 @@ from itertools import groupby
     return [next(g)[0] for _, g in groupby(zip(words, groups), key=lambda z: z[1])]
 ```
 ## medium
+[53最大子数组和@前缀和](https://leetcode.cn/problems/maximum-subarray/description/)@贪心、dp
+```python
+class Solution:
+    def maxSubArray(self, nums: List[int]) -> int:
+        # 前缀和 @贪心@dp
 
+        # # kadane算法 On经典子数组和
+        # # 用局部最优来更新全局最优
+        # def kadane(nums):
+        #     # 全局/局部
+        #     max_sum = curr = nums[0]
+        #     for num in nums[1:]:
+        #         # 局部最优，当前元素结尾的最大子数组和
+        #         curr = max(num, curr + num)  # 要么接着加，要么从当前重新开始
+        #         # 全局最优
+        #         max_sum = max(max_sum, curr) 
+        #     return max_sum
+
+        # return kadane(nums)
+
+        # # @dp f[i]表示以nums[i]结尾的最大子数组和
+        # # 转移方程：(1)独立成组 (2)和前面数组拼起来
+        # f=[0]*len(nums)
+        # f[0]=nums[0]
+        # for i in range(1,len(nums)):
+        #     f[i]= max(f[i-1],0)+nums[i]
+        # return max(f)
+        
+        # @dp空间优化
+        ans = -inf
+        f=0 # 可以初始化为0或者任何-c
+        for x in nums:
+            f=max(f,0)+x
+            ans=max(ans,f)
+        return ans
+
+        # @买股票121
+        # 子数组的元素求和===两个前缀和的差
+        ans=-inf
+        min_pre_sum = pre_sum = 0
+        for x in nums:
+            pre_sum+=x # 更新前缀和
+            ans=max(ans,pre_sum-min_pre_sum) # 前缀和-最小前缀和（全局最大）
+            min_pre_sum=min(min_pre_sum,pre_sum) # 维护最小前缀和（局部最小）
+
+        return ans
+```
+
+[3186](https://leetcode.cn/problems/maximum-total-damage-with-spell-casting/description/)施咒的最大伤害@打家劫舍198，值域数组，
+```python
+class Solution:
+    def maximumTotalDamage(self, power: List[int]) -> int:
+        # @递归
+        # cnt=Counter(power)
+        # a=sorted(cnt.keys())
+
+        # @cache
+        # def dfs(i:int)->int:
+        #     if i<0:
+        #         return 0
+            
+        #     x=a[i]
+        #     # 最小合法的a[j]>=a[i]-2
+        #     # 不选时候dfs(i)=dfs(j-1)+ a[i]*cnt[a[i]]
+        #     j=i 
+        #     while j and a[j-1] >= x-2:
+        #         j-=1
+
+        #     return max(dfs(i-1),dfs(j-1) + x*cnt[x]) # 用key*freq表示值域
+        
+        # return dfs(len(a)-1)
+
+        # @递推
+        cnt=Counter(power)
+        # 合法数值数组a, a[j-1]相对于a[j]直接是一个合法有效值
+        # sorted()排序
+        a=sorted(cnt.keys())
+        
+        # f[i+1] === dp(i)
+        # 边界dp(-1) 所以哨兵地，shfit右移1
+        f=[0]*(len(a)+1) 
+        j=0
+
+        for i,x in enumerate(a):
+            # 出来时候最小合法的a[j] >= x-2
+            
+            while a[j]<x-2:
+                j+=1
+
+            # 对于i+1来说，选择的情况下下一个合法的是a[i+1]-2 -1
+            # 所以a[i]-1
+            f[i+1]=max(f[i],f[j] + x*cnt[x])
+        
+        return f[-1]
+```
+
+[740删除并获得点数](https://leetcode.cn/problems/delete-and-earn/description/)@打家劫舍198，值域数组
+```python
+class Solution:
+    # 预处理值域数组，等价成打家劫舍198问题
+    def rob198(self,nums: List[int])->int:
+        f0=f1=0
+        for x in nums:
+            f0,f1 = f1,max(f1,f0+x)
+        return f1
+
+    def deleteAndEarn(self, nums: List[int]) -> int:
+        # [2,3,4]
+        # 你拿-1，那么-2不能拿
+        # 你拿-2，那么-1和-3也许不能拿
+        a=[0]*(max(nums)+1)
+        for x in nums:
+            a[x] += x
+        return self.rob198(a)
+```
+
+[2320](https://leetcode.cn/problems/count-number-of-ways-to-place-houses/description/)@线性dp
+```python
+MOD=1_000_000_007
+MX=10_001
+
+f=[1,2]
+# 横着dp，因为两边所以乘法原理
+while len(f)<MX:
+    f.append((f[-1] + f[-2])%MOD)
+class Solution:
+    def countHousePlacements(self, n: int) -> int:
+        return f[n] ** 2 % MOD # 乘法原理
+```
+
+213打家劫舍II@打家劫舍，条件分支，dp
+```python
+class Solution:
+    def rob(self, nums: List[int]) -> int:
+        def dp(nums)->int:
+            f0=f1=0
+            for i,x in enumerate(nums):
+                f0,f1 = f1,max(f1,f0+x)
+            return f1
+        
+        return max(nums[0]+dp(nums[2:-1]),dp(nums[1:]))
+```
+
+198打家劫舍@dp
+```python
+class Solution:
+    def rob(self, nums: List[int]) -> int:
+
+        # # dp() 选择完索引i之后最大价值
+        # @cache
+        # def dp(i)->int:
+        #     if i==0:
+        #         return nums[0]
+        #     if i==1:
+        #         return max(nums[1],nums[0])
+        #     # either do i-1, or i-2 and i
+        #     return max(dp(i-1),dp(i-2)+nums[i])
+        # return dp(len(nums)-1)
+
+        # # @递推，相对索引
+        # f=[0]*2
+        # f[0]=nums[0]
+        # f[1]=max(nums[:2])
+        # for _ in range(len(nums)-2):
+        #     f.append(max(f[-1],f[-2]+nums[len(f)]))
+        # return f[-1]
+
+        # @递推，f=[0]*(len(nums)+2)
+        f=[0]*len(nums)+[0]*2
+        for i,x in enumerate(nums):
+            f[i+2]=max(f[i+1],f[i]+x)
+        return f[-1]
+```
 
 2266@70爬楼梯，相对索引（dp、滑动窗口），dp，迭代器只能使用一次，list(groupby()[1])=["2","2","2"],list(groupby()[0])='2'
 ```python
