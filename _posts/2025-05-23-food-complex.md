@@ -15,6 +15,8 @@ tag: complex
 
 ![alt text](../assets/2025-05/44b699ccbe272916387e92d6c1d6976.jpg)_午餐-乌冬面18cny_
 
+![alt text](../assets/2025-05/3b62199e37cc5e41ac715e67f0b1a49.jpg)_晚餐-黄牛小炒肉20cny_
+
 
 ### 2025-05-24
 

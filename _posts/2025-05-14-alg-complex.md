@@ -402,6 +402,66 @@ from itertools import groupby
     return [next(g)[0] for _, g in groupby(zip(words, groups), key=lambda z: z[1])]
 ```
 ## medium
+
+
+[64](https://leetcode.cn/problems/minimum-path-sum/description/)@网格dp，递推，空间优化
+```python
+class Solution:
+    def minPathSum(self, grid: List[List[int]]) -> int:
+        # [[1,2,3],
+        # [1,2,3]]
+
+        # len(g)=2=i
+        # len(g[0])=3=j
+
+        # @cache # Omn
+        # def dfs(i:int, j:int)->int:
+        #     if i<0 or j<0:
+        #         return inf
+        #     if i==0 and j==0:
+        #         return grid[i][j]
+        #     return min(dfs(i-1,j),dfs(i,j-1)) + grid[i][j]
+        
+        # return dfs(len(grid)-1,len(grid[0])-1)
+        
+        # m,n = len(grid),len(grid[0])
+        # f=[[inf]*(n+1) for _ in range(m+1)]
+        # f[1][0]=0
+        # for i,row in enumerate(grid):
+        #     for j,x in enumerate(row):
+        #         f[i+1][j+1]=min(f[i+1][j],f[i][j+1])+x
+        # return f[m][n]
+
+        m,n=len(grid),len(grid[0])
+        f=grid[0]
+        print(f)
+        for j in range(1,n):
+            f[j]+=f[j-1]
+        print(f)
+        for i in range(1,m):
+            f[0]+=grid[i][0]
+            for j in range(1,n):
+                f[j] = min(f[j-1],f[j])+grid[i][j]
+            print(f)
+        return f[-1]
+```
+
+[152](https://leetcode.cn/problems/maximum-product-subarray/)乘积最大子数组@dp
+```python
+class Solution:
+    def maxProduct(self, nums: List[int]) -> int:
+        ans=-inf # ans may negative
+        
+        # f_max=max(f_max[i-1],f_min[i-1],1)*x
+        # f_min=min(f_min[i-1],f_max[i-1],1)*x
+        f_max=f_min=1
+        for x in nums:
+            f_max,f_min=max(f_max*x,f_min*x,1*x),min(f_max*x,f_min*x,1*x)
+            ans=max(ans,f_max)
+        
+        return ans
+```
+
 [2140](https://leetcode.cn/problems/solving-questions-with-brainpower/solutions/1213919/dao-xu-dp-by-endlesscheng-2qkc/)@dp递推、递归@刷表法@never
 ```python
 class Solution:
