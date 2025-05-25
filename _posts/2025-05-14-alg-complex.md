@@ -6,6 +6,9 @@ tag: complex
 ---
 
 [![Static Badge](https://img.shields.io/badge/%E7%81%B5%E7%A5%9E-%E7%A7%91%E5%AD%A6%E5%88%B7%E9%A2%98-55acee?logo=leetcode&logoColor=%23FFA116)](https://leetcode.cn/discuss/post/3141566/ru-he-ke-xue-shua-ti-by-endlesscheng-q3yd/)
+[![Static Badge](https://img.shields.io/badge/{num}-%E7%81%B5%E7%A5%9E-55acee?logo=leetcode&logoColor=%23FFA116)](#)
+[![Static Badge](https://img.shields.io/badge/%E9%A2%98%E8%A7%A3-nagi-55acee?logo=leetcode)](https://leetcode.cn/u/silly-swartzd9f/)
+
 
 [![alt text](../assets/2025-05/image-1.png)](https://leetcode.cn/discuss/post/3584387/fen-xiang-gun-mo-yun-suan-de-shi-jie-dan-7xgu/)_python每秒执行10e7运算\模运算_
 
