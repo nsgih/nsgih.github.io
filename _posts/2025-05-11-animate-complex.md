@@ -9,6 +9,24 @@ tag: complex
 
 
 ## 动画板
+
+### beastar
+
 描绘尊敬学长路易和大灰狼初恋小白兔多次做爱的剧情还蛮有意思的，从第二季开始抓凶手、黑市就急转直下。977的描述还是太精准了“日本动漫一旦开始讲政治、讲经济、讲资本财团，那就图个乐就醒了”。我本来期待能在肉食动物压抑本性和草食动物共存的社会架构下讲一些有趣的故事，结果就让我心痒痒了一下哎。大灰狼和小白兔在一起之后的剧情也索然无味，大熊猫就是能和大灰狼冲进狮子黑道巢穴并且薄纱狮子老大呢，我是一点不信。
+
 ![alt text](/assets/image.png)_beastar_
 
+### bang dream
+
+- [ ] 找个时间打算go一下。
+
+#### emoji
+
+![alt text](../assets/2025-05/3d902dc87aab7f5eadfe589c870fa2b.png){: .shadow .dark}
+
+![alt text](../assets/2025-05/731ca5339ca65dc1bceea21ae8bd19d.png){: .shadow .dark}
+
+![alt text](../assets/2025-05/302b19f14c97690305b2824dcab2737.png){: .shadow .dark}
+
+![alt text](../assets/2025-05/117d0b6738fe98dadbd33fd86289342.png){: .shadow .dark}
+![alt text](../assets/2025-05/56ddd760653e2e9e167225628fc9af2.png){: .shadow .dark}
