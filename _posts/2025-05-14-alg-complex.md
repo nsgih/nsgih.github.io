@@ -62,8 +62,39 @@ def xor_cipher(plaintext,key):
 ```
 
 ### 排列、组合
+62@不同路径
+```python
+class Solution:
+    def uniquePaths(self, m: int, n: int) -> int:
+        # @factorial,permutation,combination
+        # 排列perm(n,c)=全排列n//1//排列n-c
+        # 组合comb(n,c)=全排列n//排列c//排列n-c
+        # 说明: n全排列方案数=c排列方案数*(n-c)排列方案数*(n,c)组合方案数
+        # math.factorial(n)
+        # math.perm(a,b)
+        # math.comb(a,b)
+        return math.comb(m+n-2,m-1)
 
-排列（Permutations），组合（Combinations）
+        # @dp
+        f=[[0]*(n+1) for _ in range(m+1)]
+        f[0][1]=1
+        for i in range(1,m+1):
+            for j in range(1,n+1):
+                f[i][j]=sum(f[i+dx][j+dy] for dx,dy in [(-1,0),(0,-1)])
+        
+        return f[-1][-1]
+
+        # @dp@空间优化
+        f=[0]*(n+1)
+        f[1]=1
+        for _ in range(m):
+            for j in range(n):
+                #                            ^^  ^^
+                #                         上轮f[j+1] 本轮f[j]
+                f[j+1]=sum(f[j+1+dx] for dx in [0,-1])
+        
+        return f[-1]
+```
 
 ### 二分
 
@@ -423,6 +454,39 @@ from itertools import groupby
 ```
 ## medium
 
+63不同路径II@空间优化::原地修改，逻辑操作
+```python
+class Solution:
+    def uniquePathsWithObstacles(self, obstacleGrid: List[List[int]]) -> int:
+        # @递推recurrence
+        m,n=len(obstacleGrid),len(obstacleGrid[0])
+        f=[[0]*(n+1) for _ in range(m+1)]
+        f[0][1]=1
+        for i in range(m):
+            for j in range(n):
+                f[i+1][j+1]=sum(0 if obstacleGrid[i][j] else f[i+1+dx][j+1+dy] for dx,dy in [(0,-1),(-1,0)] )
+        return f[-1][-1]
+
+        # @递推recurrence，空间优化
+        f=[0]*(n+1)
+        f[1]=0 if obstacleGrid[0][0] else 1
+        for i in range(m):
+            for j in range(n):
+                f[j+1]=sum(0 if obstacleGrid[i][j] else f[j+1+dx] for dx in [0,-1])
+        return f[-1]
+
+        # @递推recurrence，原地修改
+        m,n=len(obstacleGrid),len(obstacleGrid[0])
+        f=obstacleGrid[0] # update@obs: get ref
+        f[0]^=1 # # update@obs: 他1你就0; 他0你就1、不变
+        for j in range(1,n):
+            f[j]=0 if f[j] else f[j-1]
+        for i in range(1,m):
+            f[0]*=(1-obstacleGrid[i][0]) # update@obs: 他1你就0; 他0你就1、不变
+            for j in range(1,n):
+                f[j]=f[j]+f[j-1] if not obstacleGrid[i][j] else 0 # update@obs: 
+        return f[-1]
+```
 
 [64](https://leetcode.cn/problems/minimum-path-sum/description/)@网格dp，递推，空间优化
 ```python
