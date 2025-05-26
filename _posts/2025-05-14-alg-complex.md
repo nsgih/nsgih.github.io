@@ -178,7 +178,27 @@ def sort(arr):
     return sort(left)+[pivot]+sort(right)
 ```
 ### python
-- list comprehension
+
+#### 网格数组、多维数组
+
+```python
+# 一维数组
+[1]*2 = [1,1] # *是复制引用，对不可变对象例如1，2，3而不是可变对象a,b,c来说没问题
+[1 for _ in range(2)]=[1,1] # list comprehension不存在引用共享问题，每次都创建新对象
+
+# 二维数组
+[1,1]*2=[1,1,1,1] 
+[[1,1] for _ in range(2)]=[[1,1],[1,1]]
+
+f=[[inf for _ in range(n+1)] for _ in range(m+1)]
+f=[[inf]*(n+1) for _ in range(m+1)]
+# f=[[[inf]*(n+1)] *(m+1)]
+
+# 三维数组
+[[[0]*x for _ in range(y)] for _ in range(z)]
+```
+
+#### list comprehension
 
 > The word “comprehension” comes from the Latin comprehendere, meaning “to grasp,” “to include,” or “to take in.”
 > 
