@@ -8,6 +8,13 @@ order: 4
 <!-- chalkboard@pin -->
 ## 📌 Pinboard 
 
+### txt
+
+```plaintext
+大致推算出最佳区间是：2025-09-16 ~ 2025-10-13
+```
+
+### img
 ![alt text](../assets/2025-05/e0b24d23073dcda5c4326a8441de6b7.jpg)_timetable_
 
 ## livestreaming
