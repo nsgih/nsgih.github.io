@@ -5,13 +5,18 @@ order: 4
 ---
 <p style="color: #1b1b1e;">#1b1b1e 向你问好:)</p>
 
+<!-- chalkboard@pin -->
+## 📌 Pinboard 
+
+![alt text](../assets/2025-05/e0b24d23073dcda5c4326a8441de6b7.jpg)_timetable_
+
 ## livestreaming
 
 [![Static Badge](https://img.shields.io/badge/livestreaming-youtube-55acee?logo=youtube&logoColor=%23FF0000)](https://www.youtube.com/@nsgih)
 
 直播，默认自己看自己，欢迎来玩。
 
-## <i class="fa-solid fa-toggle-off"></i>Badge
+## Badge
 [![Static Badge](https://img.shields.io/badge/Badges-Static-55acee?style=flat&logo=shieldsdotio&logoSize=auto)](https://shields.io/badges)
 [![Static Badge](https://img.shields.io/badge/simpleicons-icon-55acee?logo=simpleicons&logoSize=auto)](https://simpleicons.org/?q=shields)
 [![Static Badge](https://img.shields.io/badge/chirpy--starter-template-%23181717?logo=github&logoColor=%23181717&logoSize=auto)](https://github.com/cotes2020/chirpy-starter)
@@ -43,7 +48,7 @@ badge暂时是基于sheield.io的静态版本，超链接通过md语法中对图
 - [zy](https://yangzhang.site/)
 
 
-## <i class="fa-solid fa-database"></i> 伙伴
+## <i class="fa-solid fa-map-pin"></i>  伙伴
 
 ### 衣
 
