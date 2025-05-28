@@ -3,6 +3,9 @@ layout: post
 title: being-complex
 date: 2025-05-27 12:08 +0800
 tag: complex
+image: 
+    path: /assets/2025-05/3f85fdf55047fc900d404c39833ba93.jpg
+    alt: "存在情节"
 hidden: True
 ---
 

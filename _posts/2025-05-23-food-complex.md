@@ -5,6 +5,9 @@ date: 2025-05-23 21:25 +0800
 pin: true
 author: nagi
 tag: complex
+image: 
+    path: /assets/2025-05/383f00d1742cac708c820881242570e.png   
+    alt: food
 ---
 
 ## 2025-05

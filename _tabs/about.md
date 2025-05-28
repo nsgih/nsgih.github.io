@@ -77,4 +77,11 @@ ipad-mini6 @转转二手95新 @2328cny
 
 image-Preview@ `1200 x 630`
 
+### chronic log
 
+```md
+# time descending
+
+# @comment @github-integration,need-log-in,optional
+update@2025-05-28@giscus: update comments based on https://github.com/nsgih/nsgih.github.io/discussions 
+```
