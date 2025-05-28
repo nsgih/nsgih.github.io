@@ -6,7 +6,7 @@ pin: true
 author: nagi
 tag: complex
 image: 
-    path: /assets/2025-05/383f00d1742cac708c820881242570e.png   
+    path: /assets/2025-05/79f5165ae96df1c2cf47ea1b92f6d0b.png
     alt: food
     lqip: data:image/webp;base64,UklGRpoAAABXRUJQVlA4WAoAAAAQAAAADwAABwAAQUxQSDIAAAARL0AmbZurmr57yyIiqE8oiG0bejIYEQTgqiDA9vqnsUSI6H+oAERp2HZ65qP/VIAWAFZQOCBCAAAA8AEAnQEqEAAIAAVAfCWkAALp8sF8rgRgAP7o9FDvMCkMde9PK7euH5M1m6VWoDXf2FkP3BqV0ZYbO6NA/VFIAAAA
 ---
