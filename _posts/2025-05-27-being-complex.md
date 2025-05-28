@@ -57,9 +57,14 @@ image:
 ### 人不能仅仅是工具，人必须是目的
 
 
-## @hinton@llya stuskever@alex krizhevsky
+## Hinton Lab
 
-![alt text](../assets/2025-05/5da291231a15f4d51cb306fc1bd8c0b.png){: w="400" h="200" }_三巨头_
+[![Static Badge](https://img.shields.io/badge/Ilya%20Sutskever-4B4C7A)](https://scholar.google.com/citations?user=x04W_mMAAAAJ&hl=en&oi=ao)
+[![Static Badge](https://img.shields.io/badge/-Geoffrey%20Hinton-4B4C7A)](https://scholar.google.com/citations?user=JicYPdAAAAAJ&hl=en&oi=ao)
+[![Static Badge](https://img.shields.io/badge/Alex%20Krizhevsky-4B4C7A)](https://scholar.google.com/citations?user=xegzhJcAAAAJ&hl=en&oi=ao)
+
+
+![alt text](../assets/2025-05/5da291231a15f4d51cb306fc1bd8c0b.png){: w="400" h="200" }
 
 ### attenion-is-all-you-need
 
