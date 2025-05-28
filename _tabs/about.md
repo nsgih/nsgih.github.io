@@ -37,6 +37,9 @@ order: 4
 [![Static Badge](https://img.shields.io/badge/zlib-nagi.co-55acee?logo=librarything&logoColor=%23251A15)](https://1lib.sk/)
 [![Static Badge](https://img.shields.io/badge/FrontAwesome-icon-55acee?logo=fontawesome&logoColor=%23538DD7)](https://fontawesome.com/search)
 [![Static Badge](https://img.shields.io/badge/Favicon-fav--icon-55acee?logo=starbucks&logoColor=%23006241)](https://realfavicongenerator.net/)
+[![Static Badge](https://img.shields.io/badge/giscus-comment-55acee?logo=github&logoColor=%23181717)](https://giscus.app/zh-CN)
+
+
 
 badge暂时是基于sheield.io的静态版本，超链接通过md语法中对图片超链接实现。
 

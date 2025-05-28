@@ -453,6 +453,54 @@ from itertools import groupby
     return [next(g)[0] for _, g in groupby(zip(words, groups), key=lambda z: z[1])]
 ```
 ## medium
+3372@闭包，邻接表，暴力@直径优化
+```python
+class Solution:
+    def build_tree(self, edges: List[List[int]], k: int) -> Callable[[int, int, int], int]:
+        # @闭包@邻接表
+        
+        # 1. 邻接表g @邻接表@邻接矩阵@边列表
+        g=[[] for _ in range(len(edges)+1)]
+        for x,y in edges:
+            g[x].append(y)
+            g[y].append(x)
+        
+        # x,fa,d: cur node, father node, distance from node i
+        # cnt: 
+        def dfs(x,fa,d)->int:
+            if d>k: # constraint: d <=k
+                return 0
+            cnt=1
+            # adjacement table: 找x邻边
+            for y in g[x]:
+                if y!=fa: # 排除fa
+                    cnt+=dfs(y,x,d+1) # 走远加一 
+            return cnt # 返回node x's adjace side总数
+
+
+        # 闭包要件:
+        #   嵌套函数
+        #   自由变量, 内部函数必须引用外部函数的变量
+        #   “冻结”其作用域, 对外部函数返回这个内部函数
+        return dfs
+
+    def maxTargetNodes(self, edges1: List[List[int]], edges2: List[List[int]], k: int) -> List[int]:
+        # @local 
+        # edges2的最优埠节点、局部最优节点 
+        max2=0
+        if k:
+            dfs=self.build_tree(edges2,k-1) # 第一次宣告dfs
+            max2=max(dfs(i,-1,0) for i in range(len(edges2)+1)) # V=E+1
+        
+        # 闭包 closure
+        # 第二次宣告dfs 
+        dfs=self.build_tree(edges1,k)
+        
+        print(dfs)
+        # @gobal
+        # 枚举edges1达到全局最优
+        return [dfs(i,-1,0)+max2 for i in range(len(edges1)+1)] # V=E+1
+```
 
 63不同路径II@空间优化::原地修改，逻辑操作
 ```python
