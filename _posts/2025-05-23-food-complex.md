@@ -13,6 +13,10 @@ image:
 
 ## 2025-05
 
+### 2025-05-29
+
+![a](../assets/2025-05/bf46efa928c276aea8e257cc5a9bed0.png)_午餐-40cny_
+
 ### 2025-05-28
 
 ![alt text](../assets/2025-05/79f5165ae96df1c2cf47ea1b92f6d0b.png)_晚餐-烤鸡半23cny_
