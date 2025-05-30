@@ -12,7 +12,7 @@ image:
 
 ## Steve Jobs
 
-![alt text](../../assets/2025-05/4fcc465b094e3c78c375f26c7cd0eae.png){: w="200" h="100" }_1955-02-24~2011-10-05(56yrs)_
+![alt text](assets/2025-05/4fcc465b094e3c78c375f26c7cd0eae.png){: w="200" h="100" }_1955-02-24~2011-10-05(56yrs)_
 
 ### 传记(典藏,单人翻译版 )
 
