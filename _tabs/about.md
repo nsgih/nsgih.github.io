@@ -6,11 +6,7 @@ order: 4
 ---
 <p style="color: #1b1b1e;">#1b1b1e 向你问好:)</p>
 
-## TL;DR
-- author nagi
-- mostly drafts  
-- comment open
-- you dislike you leave
+
 
 <!-- chalkboard@pin -->
 ## 📌 Pinboard 
@@ -27,6 +23,12 @@ order: 4
 
 ### img@ `1200 x 630`
 ![alt text](../assets/2025-05/e0b24d23073dcda5c4326a8441de6b7.jpg)_timetable_
+
+## TL;DR
+- author nagi
+- mostly drafts  
+- comment open
+- you dislike you leave
 
 ## 🔴 livestreaming
 

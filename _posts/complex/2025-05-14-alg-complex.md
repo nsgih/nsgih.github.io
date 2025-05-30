@@ -14,21 +14,9 @@ tag: complex
 
 ## 脚手架
 
-### 字典dict
+### 图论
 
-```python
-# 对应打包生成字典mp
-mp=dict(zip(chars,vals))  
-# mp.get(c,default_value) 要么得到字典序，要么返回默认值
-mp.get(c,ord(c)-ord('a')+1) 
 
-# python@3.9 覆盖写法
-mp=dict(zip(ascii_lowercase,range(1,27))) | dict(zip(chars,vals))
-
-# chars, val eg.
-chars="abc"
-val=[-1,-1,-1]
-```
 
 ### xor and or
 
@@ -209,6 +197,22 @@ def sort(arr):
     return sort(left)+[pivot]+sort(right)
 ```
 ### python
+
+### 字典dict
+
+```python
+# 对应打包生成字典mp
+mp=dict(zip(chars,vals))  
+# mp.get(c,default_value) 要么得到字典序，要么返回默认值
+mp.get(c,ord(c)-ord('a')+1) 
+
+# python@3.9 覆盖写法
+mp=dict(zip(ascii_lowercase,range(1,27))) | dict(zip(chars,vals))
+
+# chars, val eg.
+chars="abc"
+val=[-1,-1,-1]
+```
 
 #### 网格数组、多维数组
 

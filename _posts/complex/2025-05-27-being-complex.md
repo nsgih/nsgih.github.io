@@ -9,7 +9,16 @@ image:
     lqip: data:image/webp;base64,UklGRpoAAABXRUJQVlA4WAoAAAAQAAAADwAABwAAQUxQSDIAAAARL0AmbZurmr57yyIiqE8oiG0bejIYEQTgqiDA9vqnsUSI6H+oAERp2HZ65qP/VIAWAFZQOCBCAAAA8AEAnQEqEAAIAAVAfCWkAALp8sF8rgRgAP7o9FDvMCkMde9PK7euH5M1m6VWoDXf2FkP3BqV0ZYbO6NA/VFIAAAA
 # hidden: True
 ---
+
+## Steve Jobs
+
+![alt text](../../assets/2025-05/4fcc465b094e3c78c375f26c7cd0eae.png){: w="200" h="100" }_1955-02-24~2011-10-05(56yrs)_
+
+### 传记(典藏,单人翻译版 )
+
+
 ## 伊曼努尔·康德
+
 <!-- 学派 -->
 [![Static Badge](https://img.shields.io/badge/%E5%AD%A6%E6%B4%BE-%E5%BA%B7%E5%BE%B7%E4%B9%89%E5%8A%A1%E4%B8%BB%E4%B9%89-55acee)](#)
 [![Static Badge](https://img.shields.io/badge/%E5%90%AF%E8%92%99%E4%B8%BB%E4%B9%89%E5%93%B2%E5%AD%A6-55acee)](#)
