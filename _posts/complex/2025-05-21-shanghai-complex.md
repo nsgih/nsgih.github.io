@@ -2,7 +2,6 @@
 layout: post
 title: shanghai complex
 tag: complex
-categories: [Travel,Abroad]
 date: 2025-05-21 15:07 +0800
 ---
 上海观察。

@@ -117,3 +117,10 @@ bundle exec jekyll rename _drafts/my-renamed-draft.md "My new draft"
 */*.md 只会匹配 docs/b.md（只深入一层）
 **/*.md 会匹配 a.md、docs/b.md、docs/topics/c.md，亦即任意层级
 ```
+
+### 相对路径、绝对路径
+When writing posts I find those two are exactly the same. Then I got it: it's `relative path` and `absolute path`.
+```md
+![alt text](../../assets/2025-05/image-25.png) # relative
+![alt text](/assets/2025-05/image-25.png) # absolute
+```
