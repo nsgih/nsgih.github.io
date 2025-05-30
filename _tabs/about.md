@@ -18,7 +18,7 @@ order: 4
 大致推算出最佳区间是: "2025-09-16" ~ "2025-10-13"
 ```
 
-### img
+### img@ `1200 x 630`
 ![alt text](../assets/2025-05/e0b24d23073dcda5c4326a8441de6b7.jpg)_timetable_
 
 ## livestreaming
@@ -60,25 +60,6 @@ badge暂时是基于sheield.io的静态版本，超链接通过md语法中对图
 - [@博客看板娘](https://gardencavy.site/course/blog/blog03/)
 - [医学统计学@王超辰](https://wangcc.me/LSHTMlearningnote/)
 - [zy](https://yangzhang.site/)
-
-
-## <i class="fa-solid fa-map-pin"></i>  伙伴
-
-### 衣
-
-酒红运动短t @BJHG @135cny @贴身 @180/92A @74.3%棉25.7聚酯纤维 @2025-05-23
-
-### 工具
-
-iphone12 @jd二手 @2298cny
-
-tb后盖 @41cny
-
-airpods4-主动降噪 @环球港 @1399cny @2024-11-09
-
-ipad-mini6 @转转二手95新 @2328cny
-
-image-Preview@ `1200 x 630`
 
 ### chronic log
 
