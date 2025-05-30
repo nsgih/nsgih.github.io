@@ -15,8 +15,8 @@ image:
 
 ### 2025-05-30
 
-![alt text](//assets/2025-05/070aac83be4cc8557d513d717c398c9.jpg)_河东·干锅土豆13cny_
-![alt text](//assets/2025-05/2e4cdfb3534669b3099eb655ba0b0eb.jpg)_河东·杂粮煎饼5cny_
+![alt text](/assets/2025-05/070aac83be4cc8557d513d717c398c9.jpg)_河东·干锅土豆13cny_
+![alt text](/assets/2025-05/2e4cdfb3534669b3099eb655ba0b0eb.jpg)_河东·杂粮煎饼5cny_
 
 ### 2025-05-29
 
