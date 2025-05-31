@@ -9,3 +9,7 @@ nsgi:
 nagi:
   name: Nagi Hsiao
   url: https://github.com/nsgih
+
+chatgpt:
+  name: ChatGPT
+  url: https://openai.com/blog/chatgpt

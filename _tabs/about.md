@@ -69,6 +69,7 @@ badge暂时是基于sheield.io的静态版本，超链接通过md语法中对图
 - [@博客看板娘](https://gardencavy.site/course/blog/blog03/)
 - [医学统计学@王超辰](https://wangcc.me/LSHTMlearningnote/)
 - [zy](https://yangzhang.site/)
+- [阮一峰](https://www.ruanyifeng.com/blog/)
 
 ## 📜 chronic log
 
