@@ -1,11 +1,12 @@
 ---
 layout: post
-title: 【傻瓜式教程】2025年最简单的翻墙方法，用 Clash for Windows 打开互联网之门
+title: 如何石头门@gpt
 date: 2025-05-31 15:16 +0800
 hidden: true
 author: chatgpt
 ---
 
+## 【傻瓜式教程】2025年最简单的翻墙方法，用 Clash for Windows 打开互联网之门
 **副标题：小白也能上手，从下载到上网一步到位。别看“翻墙”听起来像做黑客，其实比安装微信还简单。**
 
 ---
