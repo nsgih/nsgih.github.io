@@ -12,7 +12,7 @@ image:
 
 ## Steve Jobs
 
-![alt text](assets/2025-05/4fcc465b094e3c78c375f26c7cd0eae.png){: w="200" h="100" }_1955-02-24~2011-10-05(56yrs)_
+![alt text](/assets/2025-05/4fcc465b094e3c78c375f26c7cd0eae.png){: w="200" h="100" }_1955-02-24~2011-10-05(56yrs)_
 
 ### 传记(典藏,单人翻译版 )
 
@@ -61,7 +61,7 @@ image:
 [![Static Badge](https://img.shields.io/badge/欧几里得-DD2C00)](#)
 
 <!-- 肖像 -->
-![alt text](../assets/2025-05/image-9.png)_1724-04-22..1804-02-12(79yrs)_
+![alt text](/assets/2025-05/image-9.png)_1724-04-22..1804-02-12(79yrs)_
 
 ### 人不能仅仅是工具，人必须是目的
 
@@ -72,7 +72,83 @@ image:
 [![Static Badge](https://img.shields.io/badge/Alex%20Krizhevsky-4B4C7A)](https://scholar.google.com/citations?user=xegzhJcAAAAJ&hl=en&oi=ao)
 
 
-![alt text](../assets/2025-05/5da291231a15f4d51cb306fc1bd8c0b.png){: w="400" h="200" }
+![alt text](/assets/2025-05/5da291231a15f4d51cb306fc1bd8c0b.png){: w="400" h="200" }
+
+<!-- 深度学习基础 -->
+### 深度学习基础
+
+#### 数学基础
+
+- 线性代数
+
+特征值分解等
+
+- 微积分
+
+理解梯度下降优化
+
+- 概率与统计
+
+概率分布、期望、方差、最大似然估计、贝叶斯理论。
+
+#### 机器学习基础
+
+- 监督学习、无监督学习、强化学习
+
+- 损失函数
+
+如均方误差（MSE）、交叉熵（Cross-Entropy），用于衡量模型预测与真实标签差距。
+
+- 优化算法
+
+梯度下降（SGD）、Adam等，深度学习训练过程中参数更新的核心方法。
+
+- 过拟合与正则化
+
+理解模型泛化能力，正则化方法如L2正则化、Dropout等。
+
+#### 神经网络基础
+
+- 感知机与多层感知机（MLP）
+
+理解最基础的神经元模型，激活函数（Sigmoid、ReLU、Tanh等）。
+
+- 前向传播与反向传播
+
+模型计算和训练的核心流程。
+
+- 网络结构
+
+层的组成、参数、权重初始化。
+
+#### 深度学习核心架构
+
+- 卷积神经网络（CNN）
+
+用于图像等数据，理解卷积操作、池化、卷积层和全连接层的区别。
+
+- 循环神经网络（RNN）及其变种（LSTM、GRU）
+
+用于序列数据处理，如文本、语音。
+
+- Transformer模型
+
+近年来在自然语言处理和其他领域的主流架构，基于自注意力机制。
+
+#### 实践技能
+
+- 数据处理与预处理
+
+数据清洗、归一化、增强等。
+
+- 调参与训练技巧
+
+学习率调整、批大小、正则化、模型评估指标。
+
+<!-- 历史 -->
+### 历史
+
+2012年ImageNet竞赛中，团队以 16.4% 错误率碾压第二名（26.1%），引爆深度学习革命。
 
 ### attenion-is-all-you-need
 
@@ -82,17 +158,17 @@ image:
 
 [![Static Badge](https://img.shields.io/badge/%E8%AF%BB%E4%B9%A6%E4%BC%9A-where%20it%20comes%20from-55acee?logo=pinboard&logoColor=%230000FF)](https://mp.weixin.qq.com/s/GiU_evtmAidB1WzrnRNuJA)
 
-![alt text](../assets/2025-05/image-8.png){: w="200" h="100" }_其人_
+![alt text](/assets/2025-05/image-8.png){: w="200" h="100" }_其人_
 
-![alt text](../assets/2025-05/image-10.png)_其言·教育事业_
+![alt text](/assets/2025-05/image-10.png)_其言·教育事业_
 
-![alt text](../assets/2025-05/image-11.png)_其言·读书会·要义一_
+![alt text](/assets/2025-05/image-11.png)_其言·读书会·要义一_
 
-![alt text](../assets/2025-05/image-12.png)_其言·读书会·要义二_
+![alt text](/assets/2025-05/image-12.png)_其言·读书会·要义二_
 
-![alt text](../assets/2025-05/image-13.png)_其言·读书会·要义三_
+![alt text](/assets/2025-05/image-13.png)_其言·读书会·要义三_
 
-![alt text](../assets/2025-05/image-14.png)_其言·读书会·内核_
+![alt text](/assets/2025-05/image-14.png)_其言·读书会·内核_
 
 ### 荐读人/开放教学
 
@@ -102,6 +178,22 @@ image:
 ```
 
 ### 读书会/影读会
+
+#### 上书房@2025-05-31
+
+科学的态度是非人的。
+
+自我的再生产。
+
+海德格尔的繁忙在世，沉沦。
+
+劳动就是向自然界的吝啬开战。
+
+告诫俗世，稍安勿躁，黑格尔。
+
+80后最初的x后。
+
+道德训诫味道。
 
 #### 年轻人的任务是抗压@114-05-29
 
@@ -119,7 +211,7 @@ image:
 
 ## 卡尔·保罗·波兰尼
 
-![alt text](../assets/2025-05/image-2.png){: w="200" h="100" }_1886-10-25..1964-04-23(77yrs)_
+![alt text](/assets/2025-05/image-2.png){: w="200" h="100" }_1886-10-25..1964-04-23(77yrs)_
 
 > We can know more than we can tell. (Karl Paul Polanyi)
 
