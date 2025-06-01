@@ -6,7 +6,31 @@ order: 4
 ---
 <p style="color: #1b1b1e;">#1b1b1e 向你问好:)</p>
 
+[![Static Badge](https://img.shields.io/badge/Badges-Static-55acee?style=flat&logo=shieldsdotio&logoSize=auto)](https://shields.io/badges)
+[![Static Badge](https://img.shields.io/badge/simpleicons-icon-55acee?logo=simpleicons&logoSize=auto)](https://simpleicons.org/?q=shields)
+[![Static Badge](https://img.shields.io/badge/chirpy--starter-template-%23181717?logo=github&logoColor=%23181717&logoSize=auto)](https://github.com/cotes2020/chirpy-starter)
+[![Static Badge](https://img.shields.io/badge/Music-Next--to--you-%23FF0000?logo=applemusic&logoColor=%23FF0000)](https://www.youtube.com/watch?v=ejbazkKQhRk&list=OLAK5uy_kc8kMkDamS76dG6JZnKTSGwqqoWwjUaIw&index=11)
+[![Build](https://github.com/nsgih/nsgih.github.io/actions/workflows/pages-deploy.yml/badge.svg)](#)
+[![Static Badge](https://img.shields.io/badge/chatgpt-nagi.co-55acee?logo=openai&logoColor=%23412991)](https://chatgpt.com/)
+[![Static Badge](https://img.shields.io/badge/zlib-nagi.co-55acee?logo=librarything&logoColor=%23251A15)](https://1lib.sk/)
+[![Static Badge](https://img.shields.io/badge/FrontAwesome-icon-55acee?logo=fontawesome&logoColor=%23538DD7)](https://fontawesome.com/search)
+[![Static Badge](https://img.shields.io/badge/Favicon-fav--icon-55acee?logo=starbucks&logoColor=%23006241)](https://realfavicongenerator.net/)
+[![Static Badge](https://img.shields.io/badge/giscus-comment-55acee?logo=github&logoColor=%23181717)](https://giscus.app/zh-CN)
 
+
+## 🔰 Badge
+
+badge暂时是基于sheield.io的静态版本，超链接通过md语法中对图片超链接实现。
+
+![txt](https://img.shields.io/badge/any_text-you_like-blue)
+```
+https://img.shields.io/badge/any_text-you_like-blue
+```
+
+![txt](https://img.shields.io/badge/just%20the%20message-8A2BE2)
+```
+https://img.shields.io/badge/just%20the%20message-8A2BE2
+```
 
 <!-- chalkboard@pin -->
 ## 📌 Pinboard 
@@ -36,21 +60,6 @@ order: 4
 
 直播，默认自己看自己，欢迎来玩。
 
-## 🔰 Badge
-[![Static Badge](https://img.shields.io/badge/Badges-Static-55acee?style=flat&logo=shieldsdotio&logoSize=auto)](https://shields.io/badges)
-[![Static Badge](https://img.shields.io/badge/simpleicons-icon-55acee?logo=simpleicons&logoSize=auto)](https://simpleicons.org/?q=shields)
-[![Static Badge](https://img.shields.io/badge/chirpy--starter-template-%23181717?logo=github&logoColor=%23181717&logoSize=auto)](https://github.com/cotes2020/chirpy-starter)
-[![Static Badge](https://img.shields.io/badge/Music-Next--to--you-%23FF0000?logo=applemusic&logoColor=%23FF0000)](https://www.youtube.com/watch?v=ejbazkKQhRk&list=OLAK5uy_kc8kMkDamS76dG6JZnKTSGwqqoWwjUaIw&index=11)
-[![Build](https://github.com/nsgih/nsgih.github.io/actions/workflows/pages-deploy.yml/badge.svg)](#)
-[![Static Badge](https://img.shields.io/badge/chatgpt-nagi.co-55acee?logo=openai&logoColor=%23412991)](https://chatgpt.com/)
-[![Static Badge](https://img.shields.io/badge/zlib-nagi.co-55acee?logo=librarything&logoColor=%23251A15)](https://1lib.sk/)
-[![Static Badge](https://img.shields.io/badge/FrontAwesome-icon-55acee?logo=fontawesome&logoColor=%23538DD7)](https://fontawesome.com/search)
-[![Static Badge](https://img.shields.io/badge/Favicon-fav--icon-55acee?logo=starbucks&logoColor=%23006241)](https://realfavicongenerator.net/)
-[![Static Badge](https://img.shields.io/badge/giscus-comment-55acee?logo=github&logoColor=%23181717)](https://giscus.app/zh-CN)
-
-
-
-badge暂时是基于sheield.io的静态版本，超链接通过md语法中对图片超链接实现。
 
 ## <i class="fa-solid fa-toggle-off">  </i>Reference
 0. [How-to-post](http://localhost:4000/posts/write-a-new-post/)
