@@ -276,5 +276,3 @@ ch1·学校
 ## 黄国昌
 
 {% include embed/youtube.html id='YvvGunESPUE' %}
-
-{% include embed/video.html src='/assets/mp4/vod1.mp4' %}
