@@ -272,3 +272,11 @@ ch1·学校
 > We can know more than we can tell. (Karl Paul Polanyi)
 
 ### Personal Knowledge, 1958
+
+## 黄国昌
+
+{% include embed/youtube.html id='YvvGunESPUE' %}
+
+{% include embed/video.html src='/assets/2025-05/【國昌質詢】兒虐悲劇一再發生：怠惰的法務部、擴權的大法官｜2025-06-04｜司法及法制委員會.mp4' %}
+
+{% include embed/video.html src='/assets/2025-05/vod1.mp4' %}
