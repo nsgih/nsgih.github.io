@@ -46,7 +46,7 @@ https://img.shields.io/badge/just%20the%20message-8A2BE2
 ```
 
 ### img@ `1200 x 630`
-![alt text](../assets/2025-05/e0b24d23073dcda5c4326a8441de6b7.jpg)_timetable_
+![alt text](/assets/2025-05/e0b24d23073dcda5c4326a8441de6b7.jpg)_timetable_
 
 ## TL;DR
 - author nagi

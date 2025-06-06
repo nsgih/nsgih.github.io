@@ -98,7 +98,7 @@ tag: complex
 
 网上教程存在的原因是：官网要翻墙。
 
-![alt text](../assets/2025-05/image-15.png)_首先下载免费版本的setup-wizard(`Davinci-Resolve@20.0-windows`)，启动安装软件。_
+![alt text](/assets/2025-05/image-15.png)_首先下载免费版本的setup-wizard(`Davinci-Resolve@20.0-windows`)，启动安装软件。_
 
 [教程](https://www.bilibili.com/video/BV1B7411A7M1/?vd_source=8519f95560ea54533a7d5978ae4c2de6)
 
@@ -122,4 +122,4 @@ ipad-mini6 @转转二手95新 @2328cny
 
 ### 后备役
 
-![alt text](../assets/2025-05/48d3c5c1bdd96b1401e9e1406fc8fef.jpg)_服役8个月期间裆部受损,退役于@2025-05-30_
+![alt text](/assets/2025-05/48d3c5c1bdd96b1401e9e1406fc8fef.jpg)_服役8个月期间裆部受损,退役于@2025-05-30_

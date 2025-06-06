@@ -108,7 +108,7 @@ bundle exec jekyll rename _drafts/my-renamed-draft.md "My new draft"
 
 1. `ctrl`+`,`打开设置，并输入`markdown.copy`
 2. 找到markdown> Copy Files: Destination
-3. 输入键值对：`**/*.md` | `../assets/2025-05/${fileName}`，将本月图片都放到2025-05。
+3. 输入键值对：`**/*.md` | `/assets/2025-05/${fileName}`，将本月图片都放到2025-05。
 4. 之后更新文件即可。
 
 ```python
@@ -121,6 +121,6 @@ bundle exec jekyll rename _drafts/my-renamed-draft.md "My new draft"
 ### 相对路径、绝对路径
 When writing posts I find those two are exactly the same. Then I got it: it's `relative path` and `absolute path`.
 ```md
-![alt text](../../assets/2025-05/image-25.png) # relative
+![alt text](/assets/2025-05/image-25.png) # relative
 ![alt text](/assets/2025-05/image-25.png) # absolute
 ```
