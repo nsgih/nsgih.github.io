@@ -6,6 +6,10 @@ tag: complex
 hidden: true
 ---
 
+## 2001
+
+![alt text](/assets/2025-06/c112405a358368cdb23db9ecf89a083.jpg)_大精灵手书_
+
 ## 2002
 
 ### mp4
@@ -18,4 +22,4 @@ hidden: true
 ### mp3
 
 - I Really Want To Stay At Your House - Rosa Walton;Hallie Coggins
-- 
+
