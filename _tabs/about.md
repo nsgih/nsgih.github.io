@@ -35,6 +35,8 @@ https://img.shields.io/badge/just%20the%20message-8A2BE2
 <!-- chalkboard@pin -->
 ## 📌 Pinboard 
 
+![alt text](/assets/2025-06/NEW_CFOP_course.jpg)
+
 ### txt
 
 [实习@港澳台](https://jsj.top/f/wtR6JX)
