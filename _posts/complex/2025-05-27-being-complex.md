@@ -10,6 +10,10 @@ image:
 # hidden: True
 ---
 
+## 野兽派的亨利·埃米尔
+
+![alt text](/assets/2025-06/image-5.png)_亨利·埃米尔·伯努瓦·马蒂斯（法语：Henri Émile Benoît Matisse；1869年12月31日—1954年11月3日）_
+
 ## 黄之锋
 
 ![alt text](/assets/2025-05/1340325b951bec8e3921102834b906a.jpg){: w="200" h="100" }_Netflix·黄之锋：青年人物对抗超级强权_
