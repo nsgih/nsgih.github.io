@@ -13,6 +13,26 @@ image:
 
 ## 2025-06
 
+### 2025-06-11
+
+宵夜感想：腌太过，味太重，肉太老。
+
+![alt text](/assets/2025-06/5c87a503c60297df3b8b8130ea71cc3.png)_香香鸡28cny_
+
+![alt text](/assets/2025-06/11e943ab788708355b904d73b5b63d9.png)_蜜汁优惠_
+
+#### 奶茶比价大赏
+
+结论是大陆更贵。
+
+![alt text](/assets/2025-06/7efab565478547f90ce91eaaa1bb51f.png)_五十岚_
+
+![alt text](/assets/2025-06/1a732d9f6daae3685df341d9f23e118.png)_霸王茶几_
+
+![alt text](/assets/2025-06/6b2475d1d64095ca0b09cbb80fb06b8.png)_KOI_
+
+![alt text](/assets/2025-06/448695353bc5f0cc15b1b432651c88c.png)_KOI+_
+
 ### 2025-06-02
 
 ![alt text](/assets/2025-05/5b7d940f8f1d5b7cd156243eeed4be1.jpg)_垃圾香芋椰浆饭_
