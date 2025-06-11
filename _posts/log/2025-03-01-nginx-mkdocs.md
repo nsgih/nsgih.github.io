@@ -2,7 +2,7 @@
 title: Nginx静态部署mkdocs
 author: nsgi
 categories: [log]
-image: assets/image-20250505230220.png
+image: assets/2025-05/image-20250505230220.png
 ---
 # mkdocs+nginx部署
 
@@ -70,9 +70,9 @@ pip install mkdocs-material
 
 我觉得一个天上一个地下了：
 
-![image-20250423163117530](./assets/image-20250423163117530.png)
+![image-20250423163117530](/assets/2025-05/image-20250423163117530.png)
 
-![image-20250423163138098](./assets/image-20250423163138098.png)
+![image-20250423163138098](/assets/2025-05/image-20250423163138098.png)
 
 #### mkdocs.yml
 
@@ -183,7 +183,7 @@ http {
 
 没啥问题：
 
-![image-20250423172438977](./assets/image-20250423172438977.png)
+![image-20250423172438977](/assets/2025-05/image-20250423172438977.png)
 
 **那既然都可以套娃了，肯定顺手对齐一下了：**
 
@@ -248,7 +248,7 @@ http {
 
 没啥问题：
 
-![image-20250423175025554](./assets/image-20250423175025554.png)
+![image-20250423175025554](/assets/2025-05/image-20250423175025554.png)
 
 > [!NOTE]
 >
@@ -310,9 +310,9 @@ http {
 
 没啥问题：
 
-![image-20250423182052079](./assets/image-20250423182052079.png)
+![image-20250423182052079](/assets/2025-05/image-20250423182052079.png)
 
-![image-20250423182037329](./assets/image-20250423182037329.png)
+![image-20250423182037329](/assets/2025-05/image-20250423182037329.png)
 
 #### .conf@alias, root
 
