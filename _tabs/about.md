@@ -23,6 +23,12 @@ order: 4
 
 badge暂时是基于sheield.io的静态版本，超链接通过md语法中对图片超链接实现。
 
+![text](https://img.shields.io/badge/zlib-8A2BE2)
+
+```
+https://github.com/nsgih/nsgih.github.io/tree/main/assets/books
+```
+
 ![txt](https://img.shields.io/badge/any_text-you_like-blue)
 ```
 https://img.shields.io/badge/any_text-you_like-blue
