@@ -16,6 +16,7 @@ order: 4
 [![Static Badge](https://img.shields.io/badge/FrontAwesome-icon-55acee?logo=fontawesome&logoColor=%23538DD7)](https://fontawesome.com/search)
 [![Static Badge](https://img.shields.io/badge/Favicon-fav--icon-55acee?logo=starbucks&logoColor=%23006241)](https://realfavicongenerator.net/)
 [![Static Badge](https://img.shields.io/badge/giscus-comment-55acee?logo=github&logoColor=%23181717)](https://giscus.app/zh-CN)
+[![text](https://img.shields.io/badge/zlib-8A2BE2)](https://github.com/nsgih/nsgih.github.io/tree/main/assets/books)
 
 
 ## 🔰 Badge
