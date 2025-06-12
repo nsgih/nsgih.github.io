@@ -17,6 +17,8 @@ order: 4
 [![Static Badge](https://img.shields.io/badge/Favicon-fav--icon-55acee?logo=starbucks&logoColor=%23006241)](https://realfavicongenerator.net/)
 [![Static Badge](https://img.shields.io/badge/giscus-comment-55acee?logo=github&logoColor=%23181717)](https://giscus.app/zh-CN)
 [![text](https://img.shields.io/badge/zlib-8A2BE2)](https://github.com/nsgih/nsgih.github.io/tree/main/assets/books)
+[![text](https://img.shields.io/badge/毒药-8A2BE2)](https://duyaoss.com/)
+[![text](https://img.shields.io/badge/youtube订阅观看分析-8A2BE2)](https://socialblade.com/youtube/handle/akilazhang)
 
 
 ## 🔰 Badge
@@ -88,7 +90,7 @@ https://img.shields.io/badge/just%20the%20message-8A2BE2
 - [医学统计学@王超辰](https://wangcc.me/LSHTMlearningnote/)
 - [zy](https://yangzhang.site/)
 - [阮一峰](https://www.ruanyifeng.com/blog/)
-
+- [Starduster@友链]https://www.starduster.me/links/
 
 ## 📜 chronic log
 
