@@ -277,6 +277,23 @@ ch1·学校
 
 ### Personal Knowledge, 1958
 
-## 黄国昌
+
+## 中国台湾政治人物
+
+### 黄国昌(众)
 
 {% include embed/youtube.html id='YvvGunESPUE' %}
+
+### 谢龙介(国)
+
+<center>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/zFjejSudCWo?si=RL6kU8VHPI472yIH" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<p>谢龙介(国)</p>
+</center>
+
+### 沈伯洋(民)
+
+<center>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/lLl04Mtm5S8?si=plXGyXitDwvBbbeP" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<p>沈伯洋(民)</p>
+</center>
