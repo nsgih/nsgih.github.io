@@ -171,6 +171,8 @@ collections:
   tabs:
     output: true
     sort_by: order
+  oposts:
+    output: true
 
 defaults:
   - scope:
@@ -197,6 +199,11 @@ defaults:
       # make toc default
       toc: true
       permalink: /:title/
+  - scope:
+      path: "_oposts/2025-06-14-wch.md"
+    values:
+      permalink: /:title/
+
 
 sass:
   style: compressed
