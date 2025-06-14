@@ -1,6 +1,6 @@
 ---
 layout: post
-title: being-complex
+title: 存在
 date: 2025-05-27 12:08 +0800
 tag: complex
 image: 
@@ -9,6 +9,8 @@ image:
     lqip: data:image/webp;base64,UklGRpoAAABXRUJQVlA4WAoAAAAQAAAADwAABwAAQUxQSDIAAAARL0AmbZurmr57yyIiqE8oiG0bejIYEQTgqiDA9vqnsUSI6H+oAERp2HZ65qP/VIAWAFZQOCBCAAAA8AEAnQEqEAAIAAVAfCWkAALp8sF8rgRgAP7o9FDvMCkMde9PK7euH5M1m6VWoDXf2FkP3BqV0ZYbO6NA/VFIAAAA
 # hidden: True
 ---
+
+## [雷老师](https://antimony.fandom.com/zh/wiki/%E8%B6%85%E7%90%86%E6%96%87%E7%8C%AE:%E9%9B%B7%E7%BB%8D%E6%AD%A6%E5%90%8D%E8%A8%80%E8%80%83%E9%87%8A)
 
 ## 张宇峰@电玩科技ak
 
