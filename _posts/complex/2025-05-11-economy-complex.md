@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Economy Complex
+title: JJ
 date: 2025-05-11 15:42 +0800
 tag: complex
 ---
@@ -105,6 +105,13 @@ tag: complex
 ## 军事板
 
 ### 衣
+
+```yaml
+JDJZ外套: 解决夏天工装外套过热问题 提供轻量方案
+    @UV-jacket@100@2025.06
+- feat: 凉感 透气 防晒
+- perf: XXXL 黑色 锦纶氨纶 合格品
+```
 
 酒红运动短t @BJHG @135cny @贴身 @180/92A @74.3%棉25.7聚酯纤维 @2025-05-23
 
