@@ -10,7 +10,38 @@ image:
 # hidden: True
 ---
 
-## [雷老师](https://antimony.fandom.com/zh/wiki/%E8%B6%85%E7%90%86%E6%96%87%E7%8C%AE:%E9%9B%B7%E7%BB%8D%E6%AD%A6%E5%90%8D%E8%A8%80%E8%80%83%E9%87%8A)
+## 错误的谢谢
+
+### 台湾政治人物
+
+#### 黄国昌(众)
+
+{% include embed/youtube.html id='YvvGunESPUE' %}
+
+#### 谢龙介(国)
+
+<center>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/zFjejSudCWo?si=RL6kU8VHPI472yIH" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<p>谢龙介(国)</p>
+</center>
+
+#### 沈伯洋(民)
+
+<center>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/lLl04Mtm5S8?si=plXGyXitDwvBbbeP" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<p>沈伯洋(民)</p>
+</center>
+
+
+### 卡尔·保罗·波兰尼
+
+![alt text](/assets/2025-05/image-2.png){: w="200" h="100" }_1886-10-25..1964-04-23(77yrs)_
+
+> We can know more than we can tell. (Karl Paul Polanyi)
+
+#### Personal Knowledge, 1958
+
+### [雷老师](https://antimony.fandom.com/zh/wiki/%E8%B6%85%E7%90%86%E6%96%87%E7%8C%AE:%E9%9B%B7%E7%BB%8D%E6%AD%A6%E5%90%8D%E8%A8%80%E8%80%83%E9%87%8A)
 
 <span class="spoiler-tooltip">
 正确的 一针见血的 直接的 中肯的 雅致的 客观的 完整的 立体的 全面的 辩证的 形而上学的 雅俗共赏的 直击要害的
@@ -52,11 +83,11 @@ image:
   </span>
 </span>
 
-## 张宇峰@电玩科技ak
+### 张宇峰@电玩科技ak
 
 videos on tech are of high quality，著有视频和系列《硬核翻墙》、《Wi-Fi》、《Bluetooth》。纯血派中国人。
 
-### 争议事件
+#### 争议事件
 
 ![alt text](/assets/2025-06/92005517a723ed76ac4ad83c438f22f.png){: w="200" h="100"}_2023-06-04直播中对聊天室台湾人发表争议言论，一展纯血本色，有发声明，之后主动屏蔽港澳地区粉丝。_
 
@@ -86,21 +117,21 @@ videos on tech are of high quality，著有视频和系列《硬核翻墙》、�
 
 
 
-## 野兽派的亨利·埃米尔
+### 野兽派的亨利·埃米尔
 
 ![alt text](/assets/2025-06/image-5.png)_亨利·埃米尔·伯努瓦·马蒂斯（法语：Henri Émile Benoît Matisse；1869年12月31日—1954年11月3日）_
 
-## 黄之锋
+### 黄之锋
 
 ![alt text](/assets/2025-05/1340325b951bec8e3921102834b906a.jpg){: w="200" h="100" }_Netflix·黄之锋：青年人物对抗超级强权_
 
 学民思潮。Troublemaker。
 
-### 国民教育
+#### 国民教育
 
 反国教，97年回归之后第一场有效社运。
 
-### 真普选
+#### 真普选
 
 ![alt text](/assets/2025-05/8cfc7b76c5450e2ac776890ff349c16.jpg){: w="200" h="100" }_法学院教授戴耀庭_
 
@@ -134,15 +165,16 @@ videos on tech are of high quality，著有视频和系列《硬核翻墙》、�
 
 他计划在2020年合法时进行选举，进入立法院。 ∎
 
-### [时代革命2021](https://www.youtube.com/watch?v=VxXpZxY-2fk&rco=1)
+#### [时代革命2021](https://www.youtube.com/watch?v=VxXpZxY-2fk&rco=1)
 
 ∎
 
-## Steve Jobs
+
+### Steve Jobs
 
 ![alt text](/assets/2025-05/4fcc465b094e3c78c375f26c7cd0eae.png){: w="200" h="100" }_1955-02-24~2011-10-05(56yrs)_
 
-### 传记(典藏,单人翻译版 )
+#### 传记(典藏,单人翻译版 )
 
 ch1·学校
 
@@ -151,7 +183,7 @@ ch1·学校
 
 他平静但坚定地跟学校沟通，希望学校也能给乔布斯以特殊的待遇。乔布斯还记得父亲当时是这样对老师说的：“搞恶作剧并不是史蒂夫的错，如果你们教的东西提不起他的兴趣，那是你们的错。”
 
-## 伊曼努尔·康德
+### 伊曼努尔·康德
 
 <!-- 学派 -->
 [![Static Badge](https://img.shields.io/badge/%E5%AD%A6%E6%B4%BE-%E5%BA%B7%E5%BE%B7%E4%B9%89%E5%8A%A1%E4%B8%BB%E4%B9%89-55acee)](#)
@@ -197,7 +229,7 @@ ch1·学校
 <!-- 肖像 -->
 ![alt text](/assets/2025-05/image-9.png)_1724-04-22..1804-02-12(79yrs)_
 
-### 人不能仅仅是工具，人必须是目的
+#### 人不能仅仅是工具，人必须是目的
 
 ## Hinton Lab
 
@@ -345,34 +377,7 @@ ch1·学校
 道德训诫味道。
 
 
-## 卡尔·保罗·波兰尼
 
-![alt text](/assets/2025-05/image-2.png){: w="200" h="100" }_1886-10-25..1964-04-23(77yrs)_
-
-> We can know more than we can tell. (Karl Paul Polanyi)
-
-### Personal Knowledge, 1958
-
-
-## 中国台湾政治人物
-
-### 黄国昌(众)
-
-{% include embed/youtube.html id='YvvGunESPUE' %}
-
-### 谢龙介(国)
-
-<center>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/zFjejSudCWo?si=RL6kU8VHPI472yIH" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-<p>谢龙介(国)</p>
-</center>
-
-### 沈伯洋(民)
-
-<center>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/lLl04Mtm5S8?si=plXGyXitDwvBbbeP" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-<p>沈伯洋(民)</p>
-</center>
 
 ## ign
 
