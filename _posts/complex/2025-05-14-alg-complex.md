@@ -1,6 +1,6 @@
 ---
 layout: post
-title: alg complex
+title: 演算法
 date: 2025-05-14 23:43 +0800
 tag: complex
 ---

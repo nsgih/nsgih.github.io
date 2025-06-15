@@ -1,6 +1,6 @@
 ---
 layout: post
-title: bluecomplex
+title: 蓝色
 date: 2025-06-06 17:05 +0800
 tag: complex
 hidden: true
