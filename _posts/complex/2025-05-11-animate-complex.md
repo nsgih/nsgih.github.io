@@ -10,42 +10,34 @@ tag: complex
 
 ## 动画板
 
-### cyberpunk 2077 : edge runner
+#### 无职转生 I&II
 
-![alt text](/assets/2025-05/6280ff354b8783a7912bd5a1c3b3ea7.jpg)
+![alt text](/assets/2025-06/image-22.png){: w="400" h="200"}
 
-### beastar
+#### 边缘行者
 
-描绘尊敬学长路易和大灰狼初恋小白兔多次做爱的剧情还蛮有意思的，从第二季开始抓凶手、黑市就急转直下。977的描述还是太精准了“日本动漫一旦开始讲政治、讲经济、讲资本财团，那就图个乐就醒了”。我本来期待能在肉食动物压抑本性和草食动物共存的社会架构下讲一些有趣的故事，结果就让我心痒痒了一下哎。大灰狼和小白兔在一起之后的剧情也索然无味，大熊猫就是能和大灰狼冲进狮子黑道巢穴并且薄纱狮子老大呢，我是一点不信。
-
-![alt text](/assets/2025-05/imagee.png)_beastar_
+![alt text](/assets/2025-05/6280ff354b8783a7912bd5a1c3b3ea7.jpg){: w="400" h="200"}
 
 ### bang dream
 
-- [ ] 找个时间打算go一下。
+找个时间打算go一下。
 
-#### go
+![alt text](/assets/2025-05/c6b31a9c6e71000d5a06caa5b08150a.png){: w="400" h="200"}
 
-![alt text](/assets/2025-05/c6b31a9c6e71000d5a06caa5b08150a.png)
+![alt text](/assets/2025-05/11542a593de5630c8153e3055a4070f.png){: w="400" h="200"}
 
-![alt text](/assets/2025-05/11542a593de5630c8153e3055a4070f.png)
+![alt text](/assets/2025-05/3d902dc87aab7f5eadfe589c870fa2b.png){: .shadow .dark}{: w="400" h="200"}
 
-#### emoji
+![alt text](/assets/2025-05/731ca5339ca65dc1bceea21ae8bd19d.png){: .shadow .dark}{: w="400" h="200"}
 
-![alt text](/assets/2025-05/3d902dc87aab7f5eadfe589c870fa2b.png){: .shadow .dark}
+![alt text](/assets/2025-05/302b19f14c97690305b2824dcab2737.png){: .shadow .dark}{: w="400" h="200"}
 
-![alt text](/assets/2025-05/731ca5339ca65dc1bceea21ae8bd19d.png){: .shadow .dark}
-
-![alt text](/assets/2025-05/302b19f14c97690305b2824dcab2737.png){: .shadow .dark}
-
-![alt text](/assets/2025-05/117d0b6738fe98dadbd33fd86289342.png){: .shadow .dark}
-![alt text](/assets/2025-05/56ddd760653e2e9e167225628fc9af2.png){: .shadow .dark}
+![alt text](/assets/2025-05/117d0b6738fe98dadbd33fd86289342.png){: .shadow .dark}{: w="400" h="200"}
+![alt text](/assets/2025-05/56ddd760653e2e9e167225628fc9af2.png){: .shadow .dark}{: w="400" h="200"}
 
 ## 文学版
 
 ### 旅人是上帝的实体
-
-![alt text](/assets/2025-05/go-clean.png)
 
 当我下班抬起头，一架飞机划过夜空。
 
@@ -86,13 +78,3 @@ tag: complex
 在遥远的星星快要忘记祂们的时候，有些旅人会悄悄换上轻捷的衣服，套上旅行的大衣，带上祂们的伙伴，悄悄地回归那片夜空下的大地。
 
 有一些兴许淡忘过去发生的一切，再也不从人类的社会中脱离。但祂们中的更多，心已经在回来的路上了！
-
-## documentary
-
-### 黄之锋
-
-![alt text](/assets/2025-05/742a4703c01f5afe69fd68b99471a22.jpg)
-
-### 性爱解密 性幻想
-
-threesomef
