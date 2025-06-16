@@ -272,6 +272,34 @@ f=[[inf]*(n+1) for _ in range(m+1)]
 
 ## easy
 
+> #### [1432](https://leetcode.cn/problems/max-difference-you-can-get-from-changing-an-integer/?envType=daily-question&envId=2025-06-15)@贪心枚举 先导1/9/0/ 前缀
+> 
+> ```python
+> class Solution:
+>     def maxDiff(self, num: int) -> int:
+>         s=str(num) # 转成str
+>         n=le(s) # n == log num
+> 
+>         # 6789 | 9999 | 9876 
+>         mx=num # 贪心地枚举s直到第一个非"9",替换并break
+>         for d in s:
+>             if d!='9':
+>                 mx=int(s.replace(d,'9'))
+>                 break
+>                 
+>         # 4321 | 1123 | 1111
+>         mn=num
+>         if s[0] != '1': # 存在头1: 替换头为1并break
+>             mn=int(s.replace(s[0],'1'))
+>         else: # 否则贪心地枚举s直到第一个非"1", 替换为0并break
+>             for d in s:
+>                 if d>'1':
+>                     mn=int(s.replace(d,'0'))
+>                     break
+> 
+>         return mx-mn
+> ```
+
 > #### [2016](https://leetcode.cn/problems/maximum-difference-between-increasing-elements/?envType=daily-question&envId=2025-06-16)@枚举右维护左 
 > 
 > ![alt text](/assets/2025-06/b23a9003d88637ff04ae93aeef7d251.jpg){: w="400" h="200"}_逆天0 or -1_
