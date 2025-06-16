@@ -272,6 +272,23 @@ f=[[inf]*(n+1) for _ in range(m+1)]
 
 ## easy
 
+[2016](https://leetcode.cn/problems/maximum-difference-between-increasing-elements/?envType=daily-question&envId=2025-06-16)@枚举右维护左 
+
+![alt text](/assets/2025-06/b23a9003d88637ff04ae93aeef7d251.jpg){: w="400" h="200"}_逆天0 or -1_
+
+```python
+class Solution:
+    def maximumDifference(self, nums: List[int]) -> int:
+        # 枚举右 维护左
+        ans=0
+        l_min=nums[0]
+        for r in nums[1:]:
+            l_min=min(l_min,r)
+            ans=max(ans,r-l_min) 
+        return ans or -1 # 
+
+```
+
 121买卖股票的最佳时期@贪心，维护买入最小值
 ```python
 class Solution:
