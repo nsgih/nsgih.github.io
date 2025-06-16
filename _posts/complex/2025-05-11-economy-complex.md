@@ -117,16 +117,105 @@ JDJZ外套: 解决夏天工装外套过热问题 提供轻量方案
 
 咖啡休闲长裤 @JeepSpirit @158 @舒适 4XL @春秋款 @2024-10-07
 
-### 3C
+### 3 C
 
-iphone12 @jd二手 @2298cny
+#### Computer
 
-tb后盖 @41cny
+```yaml
+# 国补
+laptop@v2: 灰色 小新
+    @联想-小新14-IRH10@JD自营@2025-04-02
+- feat: 一级能效 摄像头隐私开关 Win11+Office
+- spec:
+    - 24GB RAM
+    - [512G SSD]
+    - [GTX 1050 Ti, 60 Hz, 14inch, 1920*1200, 集显, LCD]
+    - [i5-13420H, 12线程]
+    - 1.45 kg
+    - [2 USB-C, 2 USB-A, 0 USB-4/thunderbolt, HDMI-2.1, USB-C(DP), 0 有线网络RJ45] # port
+    - [双天线Wi-Fi6, ᛡᛒ] 
+    - 312502555143
+- price: 2864
 
-airpods4-主动降噪 @环球港 @1399cny @2024-11-09
+laptop@v1: 黑色 游戏本 拯救者
+    @Y7000-2018-9新@转转@2024-06-29
+- spec:
+    - 16GB
+    - [128G SSD, 1T HDD]
+    - [GTX 1050 Ti, 60 Hz, 15.6inch, 1920*1080, 独显]
+    - i7-8750H
+- price: 2198    
+```
 
-ipad-mini6 @转转二手95新 @2328cny
+#### Communication
 
-### 后备役
+```yaml
+IPhone二手机: JD二手
+    @iPhone12-95新@国行JD@2024-01-02
+- spec: [256G,蓝] 
+- price: 2298
 
-![alt text](/assets/2025-05/48d3c5c1bdd96b1401e9e1406fc8fef.jpg)_服役8个月期间裆部受损,退役于@2025-05-30_
+IPad: mini转转
+    @iPad mini6-95新@转转@2024-07-03
+- spec: [8.3 inch, Wi-Fi, 64G, 紫色]
+- price: 2328
+
+Apple Pen: 出去玩pen丢了
+    @Apple Pencil 2@国行转转@2024-07-11
+- price: 438
+```
+
+#### Consumer
+
+```yaml
+# {0,1}={充电盒，耳机}
+漫步者: 轻量降噪 无线耳机
+    @Edifier X5 Pro@JD自营@2025-06-07
+- feat: 无线 通透模式 ANC
+- spec: 
+    - 防塵、抗汗及耐水 IP55
+    - 有效距离 10m
+    - ᛡᛒ@5.3
+- battery: [13.5hr@ANC, 19.5hr]
+- price: 113
+
+sony耳机: 头戴降噪 无线耳机
+    @WH-1000XM5@国行@2023-10-23
+- feat: 蓝牙无线/有线 头戴 通透模式
+- spec: [250g, 3.5hr充电]
+- battery: [30hr@PNC, 40hr] 
+- ᛡᛒ: Bluetooth@v5.2 
+- price: 2259
+
+# {0,1}={充电盒，耳机}
+Airpod: 轻量降噪 无线耳机
+    @Airpods4-ANC@环球港Apple@2024-11-09
+- feat: 无线 通透模式 封闭生态
+- spec: 
+    - 防塵、抗汗及耐水 (IP54)
+    - [30mm*18mm*18mm, 46mm*50mm*21mm]
+    - [4.3g, 34.7g]
+- price: 1399
+- battery:
+    - [1hr@5min, 20hr@ANC, 30hr]
+    - [4hr@ANC, 4.5hr@通话, 5hr]
+
+tb后盖: iphone12手机后盖
+- price: 41
+
+Xbox手柄: 
+    @XboxOne@国行转转@2024-08-24
+- price: 188
+```
+
+```yaml
+# abort
+sony耳机: 头戴降噪 无线耳机
+    @WH-1000XM3@Sony京东自营@2020-11-09
+- feat: 蓝牙无线/有线 头戴 通透模式
+- price: 1499
+```
+
+### 退役 H I S T O R Y
+
+![alt text](/assets/2025-05/48d3c5c1bdd96b1401e9e1406fc8fef.jpg){: w="200" h="100"}_服役8个月期间裆部受损,退役于@2025-05-30_
