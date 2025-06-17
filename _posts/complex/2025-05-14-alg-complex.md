@@ -1234,6 +1234,18 @@ hamming distance: 等长字串的最小替换字串数量（描述性）。形�
 ```
 ## hard
 
+> #### [3405. 统计恰好有 K 个相等相邻元素的数组数目](https://leetcode.cn/problems/count-the-number-of-arrays-with-k-matching-adjacent-elements/description/?envType=daily-question&envId=2025-06-17)@隔板组合 子数组组合 隔板对数 元素个数 子数组个数
+> 
+> ![alt text](/assets/2025-06/947fee3b3d6f9a62d8733efe1a75c94.jpg){: w="200" h="100"}
+> 
+> ```python
+> # 组合数可以预处理加速
+> class Solution:
+>     def countGoodArrays(self, n: int, m: int, k: int) -> int:
+>         MOD=1_000_000_007          
+>         return comb(n-1,k) % MOD * m * pow(m-1,n-k-1,MOD) % MOD
+> ```
+
 [3068](https://leetcode.cn/problems/find-the-maximum-sum-of-node-values/description/?envType=daily-question&envId=2025-05-23)@树形dp@结论，状态机dp@贪心
 ```python
 class Solution:
