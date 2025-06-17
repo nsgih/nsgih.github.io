@@ -1234,7 +1234,7 @@ hamming distance: 等长字串的最小替换字串数量（描述性）。形�
 ```
 ## hard
 
-> #### [3405. 统计恰好有 K 个相等相邻元素的数组数目](https://leetcode.cn/problems/count-the-number-of-arrays-with-k-matching-adjacent-elements/description/?envType=daily-question&envId=2025-06-17)@隔板组合 子数组组合 隔板对数 元素个数 子数组个数
+> #### [3405](https://leetcode.cn/problems/count-the-number-of-arrays-with-k-matching-adjacent-elements/description/?envType=daily-question&envId=2025-06-17)@隔板组合 子数组组合 隔板对数 元素个数 子数组个数
 > 
 > ![alt text](/assets/2025-06/947fee3b3d6f9a62d8733efe1a75c94.jpg){: w="200" h="100"}
 > 
