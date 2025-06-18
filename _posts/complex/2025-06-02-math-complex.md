@@ -5,7 +5,37 @@ date: 2025-06-02 18:59 +0800
 tag: complex
 ---
 
-关于定理。
+关于应试。
+
+## 高中
+
+#### 1.集合与逻辑
+
+![alt text](/assets/2025-06/b1700e4e89070db08feb07c6779183b-1.jpg){: w="400" h="200"}_集合与元素_
+
+![alt text](/assets/2025-06/1d79cdb1b7ee552a1a90618bb76da5e.jpg){: w="400" h="200"}_集合运算_
+
+![alt text](/assets/2025-06/31e49af9e223b8447ddcda3f4ea4ee1.jpg){: w="400" h="200"}_命题: 可判断真假_
+
+![alt text](/assets/2025-06/7bd0bc16166460366369a6adab61297.jpg){: w="400" h="200"}_命题操作: 否定_
+
+![alt text](/assets/2025-06/08e75e00452992e62e36fb8f33a525a.jpg){: w="400" h="200"}_命题: 充分条件与必要条件_
+
+![alt text](/assets/2025-06/85a3761652c681137ab3b4c9019ab17.jpg){: w="400" h="200"}_命题与集合: 充分条件与必要条件_
+
+![alt text](/assets/2025-06/7b7f15af79c855d3ee58aac7845d925.jpg){: w="400" h="200"}_反证法: 命题与逆否命题_
+
+![alt text](/assets/2025-06/a11a605c989fed384dced7488380ce8.jpg){: w="400" h="200"}_[补]:经典命题的真值_ 
+
+#### 2.等式与不等式
+
+![alt text](/assets/2025-06/5003337af21565cd5a4e0a4cae35924.jpg){: w="400" h="200"}_一元二次方程解集_
+
+![alt text](/assets/2025-06/fbc49dbfc39dd54fc74e5b5ed09d530.jpg){: w="400" h="200"}_一元一次不等式_
+
+![alt text](/assets/2025-06/cf8ece3391dbd00a69436e0e6f250a5.jpg){: w="400" h="200"}_一元二次不等式解集_
+
+![alt text](/assets/2025-06/bd0b97a598c91b79e1b777d7df4b8bf.jpg){: w="400" h="200"}_基本不等式_
 
 ## *梅氏定理@wikipedia
 
