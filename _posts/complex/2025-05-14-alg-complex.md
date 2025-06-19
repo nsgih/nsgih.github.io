@@ -1467,6 +1467,50 @@ MOD = 1_000_000_007
         return ans % MOD
 ```
 
-## DC
+## pg masater
+
+使用py成为调包大师。
 
 #### 454
+
+```yaml
+454@.capitalize() [ ... if x!=""] 
+
+```
+
+```python
+class Solution:
+    def generateTag(self, caption: str) -> str:©leetcode
+        cs=[x for x in caption.split(' ') if x]
+        lst=[]
+        for i in range(len(cs)):
+            if i==0:
+                lst.append(cs[i].lower())
+            else:
+                lst.append(cs[i].capitalize()) # .capitalize()
+        ans = '#'+''.join(lst)
+        
+        return ans[:100]©leetcode
+```
+
+```python
+class Solution:
+    def specialTriplets(self, nums: List[int]) -> int:
+        MOD=10**9+7
+        ans=0
+
+        # unordered<int,int> mp1,mp2;
+        # defaultdict(int)
+        mp1,mp2=collections.defaultdict(int),collections.defaultdict(int)
+        
+        for x in nums:
+            mp2[x]+=1
+            
+        for x in nums:
+            mp2[x]-=1
+            ans=(ans + mp1[2*x]*mp2[2*x])%MOD
+            mp1[x]+=1
+
+
+        return ans©leetcode
+```
