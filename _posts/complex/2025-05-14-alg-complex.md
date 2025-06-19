@@ -502,6 +502,36 @@ from itertools import groupby
     return [next(g)[0] for _, g in groupby(zip(words, groups), key=lambda z: z[1])]
 ```
 ## medium
+
+> #### 2294@维护左枚举右@while更新i
+> 
+> ![alt text](/assets/2025-06/3f15e2368426599d3562a866cf76fa3.jpg)
+> 
+> ```python
+> class Solution:
+>     def partitionArray(self, nums: List[int], k: int) -> int:
+>         nums.sort()
+>         n=len(nums)
+>         ans=0
+>         i=j=0
+>         while i<n: # 数组不合法: i=j<n 退出
+>             while j<n and nums[j]-nums[i]<=k: # j更新: 合法则递增
+>                 j+=1
+>             
+>             ans+=1 # 数组不合法: 分割
+>             i=j # 边界: 更新i:=j
+>         return ans
+> 
+>         nums.sort()
+>         ans=0
+>         mn=-inf # 维护左; 初始化为不合法方便计数
+>         for x in nums: # 枚举右
+>             if x-mn>k: # 不合法 计数
+>                 ans+=1
+>                 mn=x       
+>         return ans 
+> ```
+
 3372@闭包，邻接表，暴力@直径优化
 ```python
 class Solution:
