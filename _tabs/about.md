@@ -9,6 +9,7 @@ order: 4
 [![text](https://img.shields.io/badge/毒药-8A2BE2)](https://duyaoss.com/)
 [![text](https://img.shields.io/badge/youtube订阅观看分析-8A2BE2)](https://socialblade.com/youtube/handle/akilazhang)
 [![](https://img.shields.io/badge/互联档案-blue)](https://ia902201.us.archive.org/)
+[![text](https://img.shields.io/badge/pilipili-8A2BE2)](https://www.bilibili.com/video/BV1qsMxz6EEd/?spm_id_from=333.1387.search.video_card.click&vd_source=8519f95560ea54533a7d5978ae4c2de6)
 
 [![text](https://img.shields.io/badge/clib-8A2BE2)](https://github.com/nsgih/nsgih.github.io/tree/main/assets/books)
 

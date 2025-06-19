@@ -318,6 +318,7 @@ f=[[inf]*(n+1) for _ in range(m+1)]
 ```
 
 121买卖股票的最佳时期@贪心，维护买入最小值
+
 ```python
 class Solution:
     def maxProfit(self, prices: List[int]) -> int:
@@ -1471,46 +1472,62 @@ MOD = 1_000_000_007
 
 使用py成为调包大师。
 
-#### 454
-
-```yaml
-454@.capitalize() [ ... if x!=""] 
-
-```
-
-```python
-class Solution:
-    def generateTag(self, caption: str) -> str:©leetcode
-        cs=[x for x in caption.split(' ') if x]
-        lst=[]
-        for i in range(len(cs)):
-            if i==0:
-                lst.append(cs[i].lower())
-            else:
-                lst.append(cs[i].capitalize()) # .capitalize()
-        ans = '#'+''.join(lst)
-        
-        return ans[:100]©leetcode
-```
-
-```python
-class Solution:
-    def specialTriplets(self, nums: List[int]) -> int:
-        MOD=10**9+7
-        ans=0
-
-        # unordered<int,int> mp1,mp2;
-        # defaultdict(int)
-        mp1,mp2=collections.defaultdict(int),collections.defaultdict(int)
-        
-        for x in nums:
-            mp2[x]+=1
-            
-        for x in nums:
-            mp2[x]-=1
-            ans=(ans + mp1[2*x]*mp2[2*x])%MOD
-            mp1[x]+=1
-
-
-        return ans©leetcode
-```
+> [#### 454](https://leetcode.cn/discuss/post/3583665/fen-xiang-gun-ti-dan-chang-yong-shu-ju-j-bvmv/)
+> 
+> ```yaml
+> 454: 
+> - tag: .capitalize() [ ... if x!=""] 
+> - tag: 维护左 枚举右 ++ --
+> - tag: [0..m-1] 0, ..., i (i)-(i-(m-1))=m-1 's link  
+> - LC: 1483 tree
+> ```
+> 
+> ```python
+> # .capitalize()
+> # .split() :auto filter ""
+> class Solution:
+>     def generateTag(self, caption: str) -> str:
+>         a=['#'] # python库函数: caption.split()
+>         for i,s in enumerate(caption.split()):
+>             s=s.capitalize() if i else s.lower()
+>             a.append(s)
+>         return ''.join(a)[:100]
+> ```
+> 
+> ```python
+> class Solution:
+>     def specialTriplets(self, nums: List[int]) -> int:
+>         MOD=1000_000_000+7
+>         suf=Counter(nums) # suffix后缀
+>         pre=defaultdict(int) # 前缀 prefix
+>         ans=0
+>         for x in nums:
+>             # i<=j的题目 
+>             # suf[x]-=1 
+>             # suf[x]-=1 
+>             # ans+=pre[2*x]*suf[2*x]
+>             
+>             suf[x]-=1 
+>             ans+=pre[2*x]*suf[2*x]
+>             pre[x]+=1
+> 
+>         return ans%MOD
+> ```
+> 
+> ```python
+> # 维护左 枚举右 ++ --
+> # [0..m-1] 0, ..., i (i)-(i-(m-1))=m-1 's link  
+> class Solution:
+>     def maximumProduct(self, nums: List[int], m: int) -> int:
+>         ans=mx=-inf
+>         mn=inf
+>         for i in range(m-1,len(nums)):
+>             # mx,mn = (max,min) o ([0..i-(m-1)] len=m-1) 
+>             y=nums[i - (m-1)] 
+>             mn,mx=min(mn,y), max(mx,y)
+> 
+>             x=nums[i] # enunmerate lhs: (x=-1)(-1)|->mn | (x=1)(1)->mx
+>             ans=max(ans,x*mn,x*mx)
+>         return ans©leetcode
+> ```
+> 
