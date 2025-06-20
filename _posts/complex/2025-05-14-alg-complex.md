@@ -504,6 +504,45 @@ from itertools import groupby
 ```
 ## medium
 
+> #### 3443@k操作最大曼哈顿距离
+> 
+> ```python
+>class Solution:
+>    def maxDistance(self, s: str, k: int) -> int:
+>         ans=0
+>         cnt = defaultdict(int) # hash: 统计步数
+>         for ch in s: # 枚举ch
+>             cnt[ch]+=1
+>             left=k # 赋值为k: 补给预算
+> 
+>             def f(a,b)->int: # 
+>                 nonlocal left # 绑定外层: 共享本次预算left_i
+>                 d=min(a,b,left) # 处理k: 短板是a or b or k
+>                 left-=d
+>                 return abs(a-b)+d*2
+> 
+>             ans=max(ans,f(cnt['N'],cnt['S']) + f(cnt['W'],cnt['E']))
+>         return ans
+> 
+>         # 维护左更新右, 局部最优推广全局最优: 
+>         #   - feat: 维护正交坐标的xy
+>         #   - feat: 更新ans=max(ans, local_max)
+>         #   - feat: local_max = min(i+1, |x1-x2|+|y1-y2|+2k)
+>         ans=0
+>         x=y=0
+>         for i,c in enumerate(s): # 枚举ch
+>             match c:
+>                 case 'N': y+=1
+>                 case 'S': y-=1
+>                 case 'W': x+=1
+>                 case 'E': x-=1
+> 
+>             ans=max(ans,
+>                     min(abs(x) + abs(y) + k*2, i+1)
+>                     )
+>         return ans
+> ```
+
 > #### 2294@维护左枚举右@while更新i
 > 
 > ![alt text](/assets/2025-06/3f15e2368426599d3562a866cf76fa3.jpg)
@@ -1472,7 +1511,9 @@ MOD = 1_000_000_007
 
 使用py成为调包大师。
 
-> [#### 454](https://leetcode.cn/discuss/post/3583665/fen-xiang-gun-ti-dan-chang-yong-shu-ju-j-bvmv/)
+> #### ~453@ 最优划分@划分DP @滑动窗口 单调队列
+
+> #### [454](https://leetcode.cn/discuss/post/3583665/fen-xiang-gun-ti-dan-chang-yong-shu-ju-j-bvmv/)
 > 
 > ```yaml
 > 454: 
