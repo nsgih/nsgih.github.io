@@ -10,7 +10,7 @@ tag: complex
 
 ## 动画板
 
-### steins;gate
+### 命运石之门
 
 ![alt text](/assets/2025-06/image-27.png){: w="400" h="200"}
 
@@ -36,6 +36,12 @@ steins;gate0: sg正统续作
 #       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ β
 #                                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^ sg
 sg[:23] -> sg23β -> sg0 -> sg0:ova -> sg[23] -> sg:ova -> sg:movie
+
+# OST
+OP: 
+- hacking to the gate
+- Fatima
+
 ```
 
 #### [广播剧](https://www.bilibili.com/opus/322287495419179718)
