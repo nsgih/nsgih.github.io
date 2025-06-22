@@ -10,15 +10,48 @@ tag: complex
 
 ## 动画板
 
-#### 无职转生 I&II
+### steins;gate
 
-![alt text](/assets/2025-06/image-22.png){: w="400" h="200"}
+![alt text](/assets/2025-06/image-27.png){: w="400" h="200"}
 
-#### 边缘行者
+#### BD series
 
-![alt text](/assets/2025-05/6280ff354b8783a7912bd5a1c3b3ea7.jpg){: w="400" h="200"}
+```yaml
+# bp5.发布时间线
+steins;gate: 科学ADV改动画
+- sg[24]@2011
+- 横行跋扈的浪荡之徒(ova)@2012
+steins;gate(movie): sg电影
+- 负荷领域的既视感@2013
+steins;gate(with IBM): IBM合作企划
+- 聪明睿智的认知计算@2014
+steins;gate(23β): 彩蛋*sg0序曲 
+- 境界面上的缺失之环@2015
+steins;gate0: sg正统续作
+- sg0[23]@2018
+- 结晶多形的情人节(ova)@2018
+
+# s;g故事时间线
+# ^^^^^ α
+#       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ β
+#                                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^ sg
+sg[:23] -> sg23β -> sg0 -> sg0:ova -> sg[23] -> sg:ova -> sg:movie
+```
+
+#### [广播剧](https://www.bilibili.com/opus/322287495419179718)
+
+### 无职转生
+
+
+![alt text](/assets/2025-06/-9lddQ0-61y3Z1oT3cS1pc-2es.jpg){: w="400" h="200"}
+
+### 边缘行者
+
+![alt text](/assets/2025-06/v2-695629afc88822b6a5f6720082c0477f_1440w.png){: w="400" h="200"}
 
 ### bang dream
+
+![alt text](/assets/2025-06/maxresdefault.jpg){: w="400" h="200"}
 
 找个时间打算go一下。
 
