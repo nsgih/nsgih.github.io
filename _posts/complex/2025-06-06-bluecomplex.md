@@ -8,7 +8,7 @@ hidden: true
 
 以现存大精灵之名宣告蓝图研究所成立。
 
-![alt text](/assets/2025-06/c112405a358368cdb23db9ecf89a083.jpg){: w="400" h="200"}_大精灵手书_
+![alt text](/assets/2025-06/c112405a358368cdb23db9ecf89a083.jpg){: w="400" h="200"}_大精灵手书（[为什么要把别人的日记作为壁纸？](https://media1.tenor.com/m/_4a8p_PLnhwAAAAC/%E7%AA%A9%E4%B8%8D%E7%9F%A5%E9%81%93.gif)）_
 
 ### [🍏](https://www.apple.com.cn/iphone/compare/)
 
