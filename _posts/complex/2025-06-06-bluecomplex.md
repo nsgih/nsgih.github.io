@@ -65,4 +65,14 @@ Apple Watch: 产品线 # since 2018
 - Ultra: 1,2 # since 2022
 ```
 
+#### accessories@2025.6
 
+配件。
+
+```yaml
+Airpods: # since 2016
+#                      ^^^ AirPods 4:引入ANC
+- series: [1st,2nd,3rd,4rd]
+- Pro: [1,2] # since 2019
+- Max: [1] # since 2020
+```
