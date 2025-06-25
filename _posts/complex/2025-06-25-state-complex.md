@@ -963,9 +963,9 @@ CCP:
 
 ### ECNU
 
-![alt text](../../assets/2025-06/image-50.png)
+![alt text](/assets/2025-06/image-50.png)
 
-![alt text](../../assets/2025-06/image-51.png)
+![alt text](/assets/2025-06/image-51.png)
 
 ## 专项行动
 
