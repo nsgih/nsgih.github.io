@@ -9,6 +9,7 @@ hidden: True
 > (・∀・(・∀・(・∀・*) 你知道吗?
 > 
 > `ctrl` + `。`大法好
+> shared knowledge -> common knowledge
 {: .prompt-tip}
 
 在这章，我们将讨论国家体制：包括叙事的、宣称的、应然的；以及实然的、实践的、现实的。
