@@ -9,6 +9,10 @@ tag: complex
 
 ## 高中
 
+![alt text](/assets/2025-06/b38fb46f3cf3b9270e585e3d2732917.jpg){: w="400" h="200"}
+
+![alt text](/assets/2025-06/5132f94842437728b6e74e15c224924.jpg){: w="400" h="200"}
+
 #### 1.集合与逻辑
 
 ![alt text](/assets/2025-06/b1700e4e89070db08feb07c6779183b-1.jpg){: w="400" h="200"}_集合与元素_
