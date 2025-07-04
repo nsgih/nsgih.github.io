@@ -13,9 +13,15 @@ tag: complex
 
 ![alt text](/assets/2025-06/5132f94842437728b6e74e15c224924.jpg){: w="400" h="200"}
 
-#### xhs
+### xhs
 
 - [爱数学的严老师](https://www.xiaohongshu.com/user/profile/5c2735a0000000000501db10?xsec_token=ABv7RmGCYXPo1fWO_DNOlbyLWGM6UOqH1KV8KuQ-uNFRg=&xsec_source=pc_note)
+
+![alt text](/assets/2025-06/3268a3b51894036a3a66a96f91a684b.png)
+
+![alt text](/assets/2025-06/6de644f1fdddb1077319d87a36caa80.png)
+
+#### 高一上
 
 ![alt text](/assets/2025-06/cc8569026efcfcf00b1a8c2845b1faa.png)
 
@@ -28,6 +34,36 @@ tag: complex
 ![alt text](/assets/2025-06/ca9c09f38d593f7c28e6651887f5d49.png)
 
 ![alt text](/assets/2025-06/8149bdf6fcd1678d0414b148f65218c.png)
+
+![alt text](/assets/2025-06/08e2b3bcfad038123e2a69e4d81e720.png)
+
+![alt text](/assets/2025-06/15cea89bcf1e211cc0406cc7735f984.png)
+
+![alt text](/assets/2025-06/06c13d884e5f8da507fb8692be9a2cc.png)
+
+![alt text](/assets/2025-06/b6ddcc9c70ad8614e762bfdf21411d0.png)
+
+![alt text](/assets/2025-06/af3e5d5ed7ec6d6bf2aadd944fe6e10.png)
+
+![alt text](/assets/2025-06/78d7709e874545af7c7400b139413c6.png)
+
+![alt text](/assets/2025-06/87a0298ec98039286309be275038f0e.png)
+
+![alt text](/assets/2025-06/9f4c47831eb42ed843b877a4391d37b.png)
+
+![alt text](/assets/2025-06/108f8c42106489b3cb16d81a3fdbdb3.png)
+
+![alt text](/assets/2025-06/aed99e234f45c8e2887aa51af190e62.png)
+
+![alt text](/assets/2025-06/4831d285521fdfa775b2ba9357070e9.png)
+
+![alt text](/assets/2025-06/b88f7ab9fc2e548316edd877e808aac.png)
+
+![alt text](/assets/2025-06/52979335d79778fb24d27f7e65e38ec.png)    
+
+![alt text](/assets/2025-06/dcd03125a25360df5505a9d23589932.png)
+
+### adhoc
 
 #### 1.集合与逻辑
 
