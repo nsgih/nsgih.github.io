@@ -13,6 +13,22 @@ tag: complex
 
 ![alt text](/assets/2025-06/5132f94842437728b6e74e15c224924.jpg){: w="400" h="200"}
 
+#### xhs
+
+- [爱数学的严老师](https://www.xiaohongshu.com/user/profile/5c2735a0000000000501db10?xsec_token=ABv7RmGCYXPo1fWO_DNOlbyLWGM6UOqH1KV8KuQ-uNFRg=&xsec_source=pc_note)
+
+![alt text](/assets/2025-06/cc8569026efcfcf00b1a8c2845b1faa.png)
+
+![alt text](/assets/2025-06/379bf5403f4e6bc80f0a59d0cb1a7f1.png)
+
+![alt text](/assets/2025-06/c6426009b6e06467816da34b8779911.png)
+
+![alt text](/assets/2025-06/2fd4769952bbea177155e7495514c75.png)
+
+![alt text](/assets/2025-06/ca9c09f38d593f7c28e6651887f5d49.png)
+
+![alt text](/assets/2025-06/8149bdf6fcd1678d0414b148f65218c.png)
+
 #### 1.集合与逻辑
 
 ![alt text](/assets/2025-06/b1700e4e89070db08feb07c6779183b-1.jpg){: w="400" h="200"}_集合与元素_
