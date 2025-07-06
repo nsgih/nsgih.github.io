@@ -8,6 +8,32 @@ date: 2025-05-24 19:38 +0800
 
 [![Static Badge](https://img.shields.io/badge/screen2gif-%E5%BC%80%E6%BA%90-55acee)](https://github.com/NickeManarin/ScreenToGif)
 
+## JDR
+
+### 2024-lh
+
+```yaml
+
+```
+
+#### SOP
+
+![alt text](/assets/2025-06/6be8a3bf59331a2522029fa438a0ded.png)
+
+![alt text](/assets/2025-06/9f4ffaff44af8f0a9dc9822c7a9dcd3.png)
+
+![alt text](/assets/2025-06/d18c0b7b23a30007124c654d9d6ebc1.png)
+
+![alt text](/assets/2025-06/25a0b7d8d30ef362bd8ef59612bcffb.png)
+
+## firefly
+
+### [滇西](https://mp.weixin.qq.com/s/1ZjCpSVkejNzkkvlxs3qcA) [2021-12-10](https://mp.weixin.qq.com/s/Y-VA_1_v-W5dH50h4Uur6A)
+
+```yaml
+null
+```
+
 ## alg
 
 ### dp@kadane
