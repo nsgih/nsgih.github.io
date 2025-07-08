@@ -173,6 +173,8 @@ collections:
     sort_by: order
   oposts:
     output: true
+  local: # local 
+    output: true
 
 defaults:
   - scope:
