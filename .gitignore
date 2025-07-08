@@ -26,5 +26,7 @@ package-lock.json
 _sass/vendors
 assets/js/dist
 
-# local configuration files
+# local
 _local
+_tabs/local.md
+_posts/local
