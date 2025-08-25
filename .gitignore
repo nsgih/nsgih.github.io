@@ -26,8 +26,8 @@ package-lock.json
 _sass/vendors
 assets/js/dist
 
-# local
-_local
-_tabs/local.md
+# open-post-local
+_oposts/local
+# general-local 
 _posts/local
-_posts/zlocal
+_tabs/local.md
