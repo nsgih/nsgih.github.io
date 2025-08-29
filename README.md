@@ -1,6 +1,10 @@
 # Chonic
 
-消磨时间
+## shell
+
+```shell
+bundle exec jekyll s
+```
 
 ## environment
 
