@@ -32,5 +32,8 @@
     {
       "path": "[[workspace]]/_tabs"
     }
-  ]
+  ],
+  "workbench.colorCustomizations": {
+    "titleBar.activeBackground": "#55acee"
+  }
 }
