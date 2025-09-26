@@ -5,7 +5,13 @@ date: 2025-05-07 00:02 +0800
 author: nagi
 categories: [tutorial,writing]
 ---
+## 文本与排版印刷
 
+.w-50 占领50%
+
+.left .right 靠左 靠右
+
+{: data-toc-skip='' .mt-4 .mb-0 } toc隐藏
 
 ## jekyll-compose
 [![Static Badge](https://img.shields.io/badge/Jekyll-Compose-55acee)](https://github.com/jekyll/jekyll-compose)
