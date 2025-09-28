@@ -16,7 +16,7 @@ order: 4
 
 <!-- 正文 -->
 
-切身的 草稿的 git风格的 随笔的 非正式的 github-pages托管的 哲学的 语言的
+just killing my time
 
 <!-- 放入你页面中任意位置 -->
 
