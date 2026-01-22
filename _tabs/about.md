@@ -12,30 +12,20 @@ order: 4
 [![text](https://img.shields.io/badge/pilipili-8A2BE2)](https://www.bilibili.com/video/BV1qsMxz6EEd/?spm_id_from=333.1387.search.video_card.click&vd_source=8519f95560ea54533a7d5978ae4c2de6)
 [![text](https://img.shields.io/badge/LITERA-123456)](https://litera-reader.com/)
 
-[![text](https://img.shields.io/badge/clib-8A2BE2)](https://github.com/nsgih/nsgih.github.io/tree/main/assets/books)
-
 <!-- 正文 -->
 
-just killing my time
-
-<!-- 放入你页面中任意位置 -->
-
-
----
+吐槽糟糕的人生
 
 ### 牝 Pin
 
 #### txt
 
 ```yaml
-# 说明：从9月第二个星期日、2月第一个星期日开始顺延、逆延4个月计算所得
-乡公所电话: +886 4-7989240
-大致推算出最佳区间是: "2025-09-16" ~ "2025-10-13"
-梯次: 9.22
+退伍后刷算法\做毕设\上驾训ing
+祝我好运:
 ```
 
-#### img 1200*630
-![alt text](/assets/2025-05/e0b24d23073dcda5c4326a8441de6b7.jpg)_timetable_
+
 
 ### 链 Wormhole
 
@@ -50,48 +40,10 @@ just killing my time
 - [阮一峰](https://www.ruanyifeng.com/blog/)
 - [Starduster 友链](https://www.starduster.me/links/)
 
+### 联系我
 
-## ign
+![alt text](/assets/2025/12/327be8d9dd9c42aa17f6589dfc15b1b.jpg){: .w-50}__
 
-<!-- 导入css -->
-<style>
-/* spoiler 样式 */
-.spoiler-tooltip {
-  position: relative;
-  background-color: black;
-  color: black;
-  cursor: pointer;
-  transition: color 0.3s ease;
-  border-bottom: 1px dotted gray; /* 可选装饰 */
-}
+---
 
-.spoiler-tooltip:hover {
-  color: white;
-}
-
-/* Tooltip 样式 */
-.tooltip-text {
-  visibility: hidden;
-  opacity: 0;
-  width: max-content;
-  max-width: 300px;
-  background-color: #333;
-  color: #fff;
-  text-align: left;
-  padding: 5px 8px;
-  border-radius: 5px;
-  position: absolute;
-  z-index: 999;
-  bottom: 125%;
-  left: 50%;
-  transform: translateX(-50%);
-  font-size: 0.9em;
-  white-space: normal;
-  transition: opacity 0.2s;
-}
-
-.spoiler-tooltip:hover .tooltip-text {
-  visibility: visible;
-  opacity: 1;
-}
-</style>
+封面图规格1200*630
